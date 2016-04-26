@@ -12,7 +12,7 @@ Welcome to Hola programming challenge! The prizes are record-high:
 
 For a change, this challenge is not about writing the fastest code! Read on.
 
-* Submit your solution to our [form](http://hola.org/challenges/word_classifier). Do not send solutions by e-mail!
+* Submit your solution to our [form](https://hola.org/challenges/word_classifier). Do not send solutions by e-mail!
 * Submission deadline: **May 27, 2016**, 23:59:59 UTC.
 * Preliminary results will be published on **June 3, 2016**, and final results on **June 10, 2016**.
 * You may submit more than once. Only your latest submission, as long as it's still before the deadline, will be evaluated.
@@ -55,7 +55,7 @@ You can submit an extra data file along with your JS code. If you do, this file 
 
 We are going to test with large numbers of words, some of them chosen from the English dictionary, and some generated nonwords with varying degrees of similarity to English, ranging from noise like *dknwertwi* to almost-words like *sonicative*. The testcases will only be ASCII strings limited to lowercase Latin letters as well as `'` and `-` characters.
 
-You can use our public testcase generator: http://hola.org/challenges/word_classifier/testcase — to test your code. Every time it's invoked, this redirects to a URL with a randomly chosen number embedded in it. That number is the pseudorandom seed. You can use it to obtain repeatable results from the testcase generator. For any given seed, the testcase generator returns a JSON object with 100 words as keys. For each key, the Boolean value contains the correct answer for this word: whether or not it belongs to the English dictionary (although you could have checked that yourself). You can use the testcase generator to see how well your program is doing, and to compare between different versions of your solution. We reserve the right to limit the frequency at which you make requests to the testcase generator.
+You can use our public testcase generator: https://hola.org/challenges/word_classifier/testcase — to test your code. Every time it's invoked, this redirects to a URL with a randomly chosen number embedded in it. That number is the pseudorandom seed. You can use it to obtain repeatable results from the testcase generator. For any given seed, the testcase generator returns a JSON object with 100 words as keys. For each key, the Boolean value contains the correct answer for this word: whether or not it belongs to the English dictionary (although you could have checked that yourself). You can use the testcase generator to see how well your program is doing, and to compare between different versions of your solution. We reserve the right to limit the frequency at which you make requests to the testcase generator.
 
 Our test system will load your module once. Then, if the module exports an `init` function, the test system will call it. If an extra data file was supplied, it is loaded as a `Buffer`, decompressed if needed, and supplied as the `data` argument to the `init` function. After that, the `test` function will be called many times with different words, and the test system will count how many correct answers are given. Any return value will be converted to Boolean.
 
@@ -63,7 +63,7 @@ We will use the same testcase generator that we made public. A number of 100-wor
 
 ### Submitting your solution
 
-Please submit your solutions using [this form](http://hola.org/challenges/word_classifier). We don't accept submissions by email.
+Please submit your solutions using [this form](https://hola.org/challenges/word_classifier). We don't accept submissions by email.
 
 We expect that many solutions will contain code that is generated, minified, compressed etc, and therefore we require that the source code be submitted as well. If the code is generated, please include the generator. If it's minified/compressed, include the original version, and the compressor if it's not a public module. If it's compiled from a different language such as CoffeeScript, include the original code. We also appreciate if you include a brief README file with some explanation of your approach (in English). Don't include a copy of the original wordlist, though. Please submit the above as a tar.gz or zip archive. It won't count towards the size quota. The contents of this archive will be published, but won't be tested. Also, it will help us decide who should receive the special prizes for exceptionally creative solutions.
 

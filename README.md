@@ -59,7 +59,7 @@ You can use our public testcase generator: http://hola.org/challenges/word_class
 
 Our test system will load your module once. Then, if the module exports an `init` function, the test system will call it. If an extra data file was supplied, it is loaded as a `Buffer`, decompressed if needed, and supplied as the `data` argument to the `init` function. After that, the `test` function will be called many times with different words, and the test system will count how many correct answers are given. Any return value will be converted to Boolean.
 
-We will use the same testcase generator that we made public. A number of 100-word blocks will be generated, and the same tests will be given to all comepting solutions. We'll use as many 100-word blocks as needed to distinguish reliably between the winning solutions. Along with the final standings, we'll publish the pseudorandom seeds that we used to test the solutions, as well as the source code of the testcase generator.
+We will use the same testcase generator that we made public. A number of 100-word blocks will be generated, and the same tests will be given to all competing solutions. We'll use as many 100-word blocks as needed to distinguish reliably between the winning solutions. Along with the final standings, we'll publish the pseudorandom seeds that we used to test the solutions, as well as the source code of the testcase generator.
 
 ### Submitting your solution
 

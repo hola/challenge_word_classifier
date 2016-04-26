@@ -49,7 +49,7 @@ test(word)
 
 This function should take a word an return `true` if it classifies the word as English, otherwise `false`. The function can be called repeatedly with different words.
 
-You can submit an extra data file along with your JS code. If you do, this file will be read into a `Buffer` by the testing system and passed as the `data` argument to the `init` function. Optionally, you can specify with a checkbox when submitting your solution that your data file is gzip-compressed; in this case, the testing system will pass the file content through `zlib.gunzipSync` before giving it to your program. The data file shares the 64 kB quota with the JS file. This option can save you the trouble of encoding binary data for representation in the JS source, and of writing a decompression algorithm.
+You can submit an extra data file along with your JS code. If you do, this file will be read into a `Buffer` by the testing system and passed as the `data` argument to the `init` function. The data file shares the 64 kB quota with the JS file. Optionally, you can specify with a checkbox when submitting your solution that your data file is gzip-compressed; in this case, the testing system will pass the file content through `zlib.gunzipSync` before giving it to your program. This option can save you the trouble of encoding binary data for representation in the JS source, and of writing a decompression algorithm. If you choose this, it is the compressed data size that must fit the quota; after decompression, the data might well exceed 64 kB in size.
 
 ### Testing
 

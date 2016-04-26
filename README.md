@@ -1,4 +1,4 @@
-# Hola JS Challenge Spring 2016: Word Classifier
+# <img src=//hola.org/img/hola_clean.png> Hola JS Challenge Spring 2016: Word Classifier
 
 Welcome to Hola programming challenge! The prizes are record-high:
 

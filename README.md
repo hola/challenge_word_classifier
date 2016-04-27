@@ -55,7 +55,7 @@ You can submit an extra data file along with your JS code. If you do, this file 
 
 ### Testing
 
-We are going to test with large numbers of words, some of them chosen from the English dictionary, and some generated nonwords with varying degrees of similarity to English, ranging from noise like *dknwertwi* to almost-words like *sonicative*. The testcases will only be ASCII strings limited to lowercase Latin letters as well as `'` and `-` characters.
+We are going to test with large numbers of words, some of them chosen from the English dictionary, and some generated nonwords with varying degrees of similarity to English, ranging from noise like *dknwertwi* to almost-words like *sonicative*. The testcases will only be ASCII strings limited to lowercase Latin letters as well as `'` character (apostrophe).
 
 You can use our public testcase generator: https://hola.org/challenges/word_classifier/testcase — to test your code. Every time it's invoked, this redirects to a URL with a randomly chosen number embedded in it. That number is the pseudorandom seed. You can use it to obtain repeatable results from the testcase generator. For any given seed, the testcase generator returns a JSON object with 100 words as keys. For each key, the Boolean value contains the correct answer for this word: whether or not it belongs to the English dictionary (although you could have checked that yourself). You can use the testcase generator to see how well your program is doing, and to compare between different versions of your solution. We reserve the right to limit the frequency at which you make requests to the testcase generator.
 

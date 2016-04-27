@@ -16,7 +16,7 @@ For a change, this challenge is not about writing the fastest code! Read on.
 * Submission deadline: **May 27, 2016**, 23:59:59 UTC.
 * Preliminary results will be published on **June 3, 2016**, and final results on **June 10, 2016**.
 * You may submit more than once. Only your latest submission, as long as it's still before the deadline, will be evaluated.
-* We will use **Node.js v5.11.0** (stable release at the time of this publication) for testing. You can use any language features supported by the interpreter in its default configuration.
+* We will use **Node.js v6.0.0** (current at the time of this publication) for testing. You can use any language features supported by the interpreter in its default configuration.
 * Your code must all be in a **single JS file**.
 * Your submission must be in JS. If you prefer CoffeeScript or similar, translate to JS before submitting.
 * It is **not allowed to require any JS modules**, not even the standard ones built into Node.js.

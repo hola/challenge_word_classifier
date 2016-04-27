@@ -20,7 +20,7 @@ For a change, this challenge is not about writing the fastest code! Read on.
 * Your code must all be in a **single JS file**.
 * Your submission must be in JS. If you prefer CoffeeScript or similar, translate to JS before submitting.
 * It is **not allowed to require any JS modules**, not even the standard ones built into Node.js.
-* Your JS file must not be larger than 64 KiB.
+* Your JS file **must not be larger than 64 KiB**.
 * You are allowed to supply one additional data file, see below. If you choose to do so, the size of this file counts towards the 64 KiB quota.
 * If your JS file or the extra data file are generated, minified and/or compiled from a different language like CoffeeScript, please submit an archive with the complete sources, and possibly a description of your approach. We will publish it, but won't test it.
 * We need to know your full name, but we can publish your solution under a pseudonym instead, if you prefer. We will not publish your email address.
@@ -47,7 +47,7 @@ This export is optional. If supplied, it will be called once to initialize your 
 test(word)
 ```
 
-This function should take a word an return `true` if it classifies the word as English, otherwise `false`. The function can be called repeatedly with different words.
+This function should take a word an return `true` if it classifies the `word` as English, otherwise `false`. The function can be called repeatedly with different words.
 
 You can submit an extra data file along with your JS code. If you do, this file will be read into a `Buffer` by the testing system and passed as the `data` argument to the `init` function. The data file shares the 64 KiB quota with the JS file. Optionally, you can specify with a checkbox when submitting your solution that your data file is gzip-compressed; in this case, the testing system will pass the file content through `zlib.gunzipSync` before giving it to your program. This option can save you the trouble of encoding binary data for representation in the JS source, and of writing a decompression algorithm. If you choose this, it is the compressed data size that must fit the quota; after decompression, the data might well exceed 64 KiB in size.
 

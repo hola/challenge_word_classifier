@@ -41,7 +41,7 @@ Your JS file has to be a Node.js module that exports two functions:
 init(data)
 ```
 
-This export is optional. If supplied, it will be called once to initialize your module.
+This export is optional. If supplied, it will be called once to initialize your module. The `data` argument will contain your extra data file (see below) as a `Buffer`, or `undefined` if you don't supply a data file.
 
 ```javascript
 test(word)

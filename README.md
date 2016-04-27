@@ -8,6 +8,8 @@ Welcome to Hola programming challenge! The prizes are record-high:
 4. We might also decide to award up to two 400 USD special prizes for exceptionally creative solutions.
 5. If you email the link to this page to someone, with challengejs@hola.org in CC, and that someone enters the competition and wins a prize, you will receive half the amount they get.
 
+See also the [Russian version](https://habrahabr.ru/company/hola/blog/282624/) of this page.
+
 ## Rules
 
 For a change, this challenge is not about writing the fastest code! Read on.

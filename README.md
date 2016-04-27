@@ -68,3 +68,5 @@ Please submit your solutions using [this form](https://hola.org/challenges/word_
 We expect that many solutions will contain code or data that is generated, minified, compressed etc, and therefore we require that the source code be submitted as well. If the code or data is generated, please include the generator. If it's minified/compressed, include the original version, and the compressor if it's not a public module. If it's compiled from a different language such as CoffeeScript, include the original code. We also appreciate if you include a brief README file with some explanation of your approach (in English). Don't include a copy of the original wordlist, though. Please submit the above as a tar.gz or zip archive. It won't count towards the size quota. The contents of this archive will be published, but won't be tested. Also, it will help us decide who should receive the special prizes for exceptionally creative solutions.
 
 If you have trouble submitting your solution, please contact challengejs@hola.org.
+
+**Good luck to all the participants!**

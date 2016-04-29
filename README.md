@@ -33,7 +33,7 @@ For a change, this challenge is not about writing the fastest code! Read on.
 
 For the purposes of this problem, we define **an English word** as a word from the list included here as [words.txt](words.txt). (If you're interested, it's the [SCOWL](http://wordlist.aspell.net/) “insane” dictionary with flattened diacritics.) Membership in the dictionary is case-insensitive. You have to write a program that can answer whether a given word is English. This would be easy — you'd just need to look the word up in the dictionary — but there is an important restriction: your program must not be larger than 64 KiB.
 
-We don't think it's possible to write a program that fits in 64 KiB and always gives correct answers. But we don't require it. For every program we will measure how often it answers correctly, and the most precise solution shall win.
+We don't think it's possible to write a program that fits in 64 KiB and always gives correct answers. But we don't require 100% correctness. For every program we will measure how often it answers correctly, and the most precise solution shall win.
 
 ### API
 

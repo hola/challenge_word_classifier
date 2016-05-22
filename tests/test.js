@@ -74,10 +74,10 @@ function main(target, testcases){
                 score++;
                 global_score++;
             }
+            total++;
         }
-        total++;
     }
-    console.log(`${global_score/total}%`);
+    console.log(`${100 * global_score/total}%`);
 }
 
 process.exit(main(process.argv[2], process.argv[3])||0);

@@ -1,0 +1,22 @@
+{
+  "name": "hola-submission",
+  "version": "0.0.1",
+  "description": "Hola Contest Submission",
+  "homepage": "",
+  "author": {
+    "name": "Adam Richeimer",
+    "email": "adamzr@gmail.com",
+    "url": "https://adamricheimer.com"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [],
+  "repository": "adamzr/hola-attempt",
+  "private": true,
+  "dependencies": {
+    "request": "^2.72.0",
+    "underscore": "^1.8.3"
+  }
+}

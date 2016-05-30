@@ -1,0 +1,1 @@
+copy /b data.js+bloom_data data

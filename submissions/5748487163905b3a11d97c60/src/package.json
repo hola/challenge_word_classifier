@@ -1,0 +1,23 @@
+{
+  "name": "challenge_word_classifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "benchmark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/vermilion1/challenge_word_classifier.git"
+  },
+  "author": "Vitalii Petrychuk",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/vermilion1/challenge_word_classifier#readme",
+  "dependencies": {
+    "bloom-filter": "^0.2.0",
+    "closurecompiler": "^1.5.3",
+    "filesize": "^3.3.0",
+    "shift-codegen": "^4.0.3",
+    "shift-parser": "^4.1.3"
+  }
+}

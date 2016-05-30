@@ -1,0 +1,26 @@
+{
+  "name": "hola2016",
+  "version": "1.0.0",
+  "description": "Hola contest solver ftw",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compress": "tar -czf sources.tar.gz solutions utils .eslintrc .gitignore package.json README.md"
+  },
+  "keywords": [
+    "hola",
+    "contest",
+    "words",
+    "cool",
+    "hashing"
+  ],
+  "author": "kabbi",
+  "license": "MIT",
+  "devDependencies": {
+    "pace": "0.0.4",
+    "request": "^2.72.0"
+  },
+  "dependencies": {
+    "exectimer": "^2.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "hola-dictionary-contest",
+  "version": "1.0.0",
+  "main": "minify.js",
+  "scripts": {
+    "minify": "node ./minify.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fuzzyset.js": "0.0.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

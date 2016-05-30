@@ -1,0 +1,16 @@
+{
+  "name": "hola",
+  "version": "1.0.0",
+  "description": "Programming contest task",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js solution testcase"
+  },
+  "author": "Yaruson",
+  "license": "ISC",
+  "dependencies": {
+    "bloomfilter": "0.0.16",
+    "lodash": "^4.12.0",
+    "uglify-js2": "^2.1.11"
+  }
+}

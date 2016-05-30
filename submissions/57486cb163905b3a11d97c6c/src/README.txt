@@ -1,0 +1,1 @@
+Dummy algorithm checking if there are exactly one or two English syllables in a word. If so it is classified as a word.

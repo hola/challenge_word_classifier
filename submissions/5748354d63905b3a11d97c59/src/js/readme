@@ -1,0 +1,4 @@
+/* MD5 by Sebastian Tschan https://github.com/blueimp/JavaScript-MD5 */
+/* big.js v3.1.3 https://github.com/MikeMcl/big.js/LICENCE */
+
+uglifyjs md5.js --compress --mangle > ./md5.min.js

@@ -1,0 +1,10 @@
+{
+  "name": "word-classifier",
+  "version": "0.1.0",
+  "devDependencies": {
+    "glob": "^7.0.3"
+  },
+  "scripts": {
+    "build": "gzip -kf -9 data.bin && uglifyjs solution.js -m -o solution.min.js"
+  }
+}

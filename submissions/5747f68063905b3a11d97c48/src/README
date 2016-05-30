@@ -1,0 +1,45 @@
+The solution involves several mechanisms:
+* wordparts:
+	A set of common wordparts was assembled
+	from the words in the dictionary.
+	Each word was disassembled into common parts.
+	Uncommon wordparts and long words were removed.
+* random hash functions:
+	The wordparts were sorted alphabetically,
+	providing each wordpart an index.
+	A mathematical function applied on the indices
+	results in an integer.
+* bitmaps:
+	Indicate which integers are possible hashes of
+	words in the dictionary.
+
+The solution's files are:
+* solution.js:
+	Exports the required functions and uses eval to
+	run code from the solution's buffer (which is
+	passed to the function after decompression).
+* buffer contents: (compressed)
+	It consists of code and bitmap parts.
+	The solution's buffer is the concatenation of:
+	* bitmap1:
+		A bitmap of all words in the dictionary.
+	* bitmap2:
+		A bitmap of words in the dictionary
+		which end with "'s".
+	* bitmap3:
+		A bitmap of words in the dictionary
+		which do not end with "'s".
+	* code parts:
+		A concatenation of:
+		* code1.js:
+			* e:
+				Array of all wordparts.
+			* f:
+				Extra array of dictionary
+				words which failed to get
+				hashed and bitmapped.
+		* code2.js: (minified)
+			Disassembles the given word,
+			hashes it and checks for it in
+			the bitmaps and in the extra
+			array of valid words.

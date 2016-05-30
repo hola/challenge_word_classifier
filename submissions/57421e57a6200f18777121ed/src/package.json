@@ -1,0 +1,22 @@
+{
+  "name": "jstest",
+  "version": "0.0.0",
+  "description": "jswords",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/andykog/jswords.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/andykog/jswords/issues"
+  },
+  "homepage": "https://gitlab.com/andykog/jswords#README",
+  "devDependencies": {
+    "uglify-js": "git://github.com/mishoo/UglifyJS2.git#harmony"
+  }
+}

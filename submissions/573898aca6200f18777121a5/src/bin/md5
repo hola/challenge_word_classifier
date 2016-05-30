@@ -1,0 +1,6 @@
+# split -l 150000 words-lower.txt
+for i in x*; do
+	cat $i | while read line; do
+		echo -n $line | sha256sum
+	done > $i.sha256sum &
+done

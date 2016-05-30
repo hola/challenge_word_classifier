@@ -1,0 +1,15 @@
+var args = process.argv.slice(2);
+var fs = require('fs');
+var size = fs.lstatSync(args[0]).size;
+var size2 = fs.lstatSync(args[1]).size;
+var data = fs.readFileSync(args[0]);
+var data2 = fs.readFileSync(args[1]);
+var b = new Buffer(4);
+b.writeInt32LE(size);
+var fd = fs.openSync(args[2], 'w');
+fs.writeSync(fd, b, 0, 4);
+fs.writeSync(fd, data, 0, data.length);
+b.writeInt32LE(size2);
+fs.writeSync(fd, b, 0, 4);
+fs.writeSync(fd, data2, 0, data2.length);
+fs.closeSync(fd);

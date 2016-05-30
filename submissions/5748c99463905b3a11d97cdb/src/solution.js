@@ -1,0 +1,1 @@
+var m;module.exports={init:function(d){eval(d.toString('utf8').split('qqqqq')[1]),m.i(d)},test:function(t){return m.t(t)}}

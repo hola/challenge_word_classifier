@@ -1,0 +1,38 @@
+{
+  "name": "word-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "node preprocess.js; wc -l stems.txt; node bloom.js; uglifyjs index.js --compress --mangle -o index.min.js; npm run total-size;",
+    "build-gcs": "node gcs.js; npm run size-gcs;",
+    "size": "ls -l --block-size=KiB bloom.bin.gz | awk '{print $5}'",
+    "all": "npm run build && npm run test",
+    "total-size": "A=`ls -l bloom.bin.gz | awk '{print $5}'`; B=`ls -l index.min.js | awk '{print $5}'`; echo $(($A+$B)); echo 65536"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "bignum": "^0.11.0",
+    "byline": "^4.2.1",
+    "chai": "^3.5.0",
+    "iconv": "^2.2.0",
+    "mocha": "^2.4.5",
+    "node-bitarray": "^0.1.0",
+    "pad": "^1.0.0",
+    "request": "^2.72.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.7.6",
+    "babel-preset-es2015": "^6.9.0",
+    "natural": "^0.4.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}

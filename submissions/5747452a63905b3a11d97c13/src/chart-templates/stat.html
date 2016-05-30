@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Words</title>
+    <script src="../node_modules/highcharts/highcharts.js"></script>
+</head>
+<body style="height: 100%" id="body">
+<script>
+    var colors = Highcharts.getOptions().colors;
+    var chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'body',
+            height: 600,
+            zoomType: 'xy'
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            shared: true
+        },
+        xAxis: [{
+        }],
+        yAxis: {
+            title: { text: null },
+            labels: { format: '{value:.2f}' },
+            min: 0, max: 100
+        },
+        plotOptions: {
+            series: {
+                stacking: 'normal'
+            }
+        },
+        series: [{
+            name: 'Rate',
+            type: 'column',
+            color: 'rgba(0,0,0,.1)',
+            data: data_rate
+        }, {
+            name: 'Probability',
+            type: 'spline',
+            color: colors[0],
+            data: data_prob
+        }]
+    });
+</script>
+</body>
+</html>

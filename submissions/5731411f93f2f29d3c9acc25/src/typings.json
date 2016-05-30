@@ -1,0 +1,8 @@
+{
+  "ambientDependencies": {
+    "es6-promise": "registry:dt/es6-promise#0.0.0+20160423074304",
+    "lodash": "registry:dt/lodash#3.10.0+20160330154726",
+    "node": "registry:dt/node#4.0.0+20160501135006",
+    "pg-promise": "registry:dt/pg-promise#0.0.0+20160417141255"
+  }
+}

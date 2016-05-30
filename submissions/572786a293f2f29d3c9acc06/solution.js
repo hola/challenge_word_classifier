@@ -1,0 +1,1 @@
+module.exports={test:w=>w.length<15}

@@ -1,0 +1,1 @@
+var e=eval;module.exports.test=function(a){return _test(a)};module.exports.init=function(a){a=a.toString().split("~~");e(a[0]);_init(a)};

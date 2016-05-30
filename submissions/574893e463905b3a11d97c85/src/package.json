@@ -1,0 +1,17 @@
+{
+  "name": "hola-shedar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "start": "node build.js",
+    "build": "node build.js compile",
+    "test": "node hola-test.js ../dist ../tests4"
+  },
+  "author": "Oleg Romanovskyi",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "closure-compiler": "^0.2.12",
+    "lodash": "^4.12.0"
+  }
+}

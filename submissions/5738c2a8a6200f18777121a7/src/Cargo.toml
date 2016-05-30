@@ -1,0 +1,6 @@
+[package]
+name = "word-classifier"
+version = "0.1.0"
+authors = ["ashabanov"]
+
+[dependencies]

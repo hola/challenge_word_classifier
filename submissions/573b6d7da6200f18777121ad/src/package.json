@@ -1,0 +1,25 @@
+{
+  "name": "hola-contest",
+  "author": "Artem Semenov",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-zopfli": "^1.4.0",
+    "rollup": "^0.26.3",
+    "rollup-plugin-commonjs": "^2.2.1",
+    "rollup-plugin-filesize": "^0.3.4",
+    "rollup-plugin-uglify": "^0.3.1"
+  },
+  "config": {
+    "pack": "fnv1a.js generate.js heuristic.js index.js package.json porter.js preprocess.js rollup.config.js test.js"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "build": "node generate.js",
+    "rollup": "rollup -c",
+    "pack": "tar -czf bundle.tar.gz $npm_package_config_pack"
+  }
+}

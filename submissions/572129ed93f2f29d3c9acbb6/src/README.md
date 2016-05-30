@@ -1,0 +1,1 @@
+The idea is break all the words to the "triplets" — tree-letter combinations with their frequency and positions in words. Based on this raw data sometimes we can give the right answer :)

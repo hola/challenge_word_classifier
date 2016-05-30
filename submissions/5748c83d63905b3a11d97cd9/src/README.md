@@ -1,0 +1,3 @@
+> Hola Contest Submission
+
+My approach was to create a dictionary of very short words, very long words, words without vowels, and words that have a fairly rare ratio of vowels to consonants. I took those words and sorted them in reverse alphabetical order by how the word would be spelled backwards. I think this may make the words compress better. I then compressed the dictionary with Zopfli, a Google GZIP compression tool. Words in the dictionary are considered valid by the testing code. Words that fall into those categories are considered invalid if they are not in the dictionary. Words that have common ratios of vowels to consonants are assumed to be correct. 

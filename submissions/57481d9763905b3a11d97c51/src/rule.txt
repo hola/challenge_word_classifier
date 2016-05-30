@@ -1,0 +1,18 @@
+aa..zz
+
+1/63804
+cat all_false.txt | grep -E "[a-z]{5,}'s[a-z]+" | wc -l
+
+0/108326
+cat all_false.txt | grep -E "'[a-z]+'" | wc -l
+
+457/99610
+cat all_false.txt | grep -E "[a-z]+'+[a-z]+'+[a-z]+" | wc -l
+
+88/197977
+cat all_false.txt | grep -E "[^aeiou]{10,}" | wc -l
+
+17182/566248
+cat all_false.txt | grep -E "[^aeiou]{6,}" | wc -l
+
+grep -E "\"[a-z']+es\""

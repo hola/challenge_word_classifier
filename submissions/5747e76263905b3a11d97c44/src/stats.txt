@@ -1,0 +1,6 @@
+score       = 10349242
+total       = 20000200
+hitrate     = 15174721
+hitrate     = 75.87285 %
+
+crossvalidation 75.4340%

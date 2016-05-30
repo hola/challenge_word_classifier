@@ -1,0 +1,25 @@
+{
+  "name": "hola-challenge",
+  "version": "0.0.1",
+  "description": "Hola programming challenge solution",
+  "main": "utils/runner.js",
+  "scripts": {
+    "test": "mocha",
+    "make":"node utils/make.js",
+    "start":"node utils/runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hola/challenge_word_classifier.git"
+  },
+  "author": "Nikolay Russkin <nrusskin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hola/challenge_word_classifier/issues"
+  },
+  "homepage": "https://github.com/hola/challenge_word_classifier#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}

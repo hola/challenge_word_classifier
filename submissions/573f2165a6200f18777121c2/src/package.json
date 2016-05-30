@@ -1,0 +1,8 @@
+{ 
+  "dependencies" :
+  { 
+    "collections": "latest",
+    "async": "latest",
+    "request": "latest"
+  }
+}

@@ -1,0 +1,3 @@
+/Users/tarikakyol/Hobby/Challenges/WordClassifier/analyzer/CMakeFiles/edit_cache.dir
+/Users/tarikakyol/Hobby/Challenges/WordClassifier/analyzer/CMakeFiles/rebuild_cache.dir
+/Users/tarikakyol/Hobby/Challenges/WordClassifier/analyzer/CMakeFiles/Analyzer.dir

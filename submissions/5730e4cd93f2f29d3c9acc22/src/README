@@ -1,0 +1,20 @@
+Algorithm:
+1) check that the parameter passed (hereinafter the word) is a string of
+  non-zero length;
+2) check that the word does not contain extra characters;
+3) check that the word is not included in the list of words containing bigrams
+  that are not may be included in English words (there are a lot of such
+  pseudo-English words in the provided list), and are not included in the list
+  of words-exclusion for which I have not written any rules, but simply
+  hardcoded;
+4) check that the word includes prefixes d'/ mc / mac, if so, then remove
+  prefixes and return the remaining part;
+5) check that the word contains an apostrophe, and if the word is from the list
+  of words-exclusion with an apostrophe, then result is positive, or if the word
+  contains the 's at the end, then remove it and return the remaining part;
+6) check the length of the word, if it is greater than 25, then check whether
+  the word in the list of words with a length greater than 25 (the maximum word
+  length of provided list - 60, in this case I chose 25, because the size of the
+  script does not fit in the restriction with shorter length);
+7) the final test - whether the word includes impossible bigrams, if so, the
+  result is negative, otherwise positive.

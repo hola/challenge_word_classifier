@@ -1,0 +1,298 @@
+{
+	"vowels": "aeiouy",
+	"consonants": "bcdfghjklmnpqrstvwxz",
+	"clusters": ["bl", "br", "ch", "ck", "cl", "cr", "dr", "fl", "fr", "gh", "gl", "gr", "ng", "ph", "pl", "pr", "qu", "sc", "sh", "sk", "sl", "sm", "sn", "sp", "st", "sw", "th", "tr", "tw", "wh", "wr"],
+	"construct": [{
+		"s": "ograph"
+	}],
+	"suffixes": {
+		"adverb": [{
+			"s": "ily",
+			"x": []
+		}, {
+			"s": "ally",
+			"x": []
+		}, {
+			"s": "ly",
+			"x": []
+		}],
+		"adjective": [{
+			"s": "able",
+			"x": [{
+				"s": "dg",
+				"x": ["knowle"]
+			}, {
+				"s": "lv",
+				"x": ["so", "sa"]
+			}, {
+				"s": "cc",
+				"x": ["pe"]
+			}, {
+				"s": "tu",
+				"x": ["accen", "perpe"]
+			}, {
+				"s": "pt",
+				"x": ["tem"]
+			}, {
+				"s": "i",
+				"not": ["z", "x", "b", "g", "h", "j", "q", "w", "x"],
+				"x": [{
+					"s": "k",
+					"x": ["s"]
+				}, {
+					"s": "m",
+					"x": ["a"]
+				}, {
+					"s": "n",
+					"x": ["de"]
+				}, {
+					"s": "p",
+					"x": ["ex"]
+				}, {
+					"s": "s",
+					"x": ["p"]
+				}]
+			}, {
+				"s": "ys",
+				"x": ["anal"]
+			}, {
+				"s": "ex",
+				"x": ["index"]
+			}, {
+				"s": "ous",
+				"x": ["ar"]
+			}, {
+				"s": "our",
+				"x": ["dev"]
+			}, {
+				"s": "bl",
+				"x": ["sem"]
+			}, {
+				"s": "one",
+				"x": ["at"]
+			}, {
+				"s": "te",
+				"x": ["ex", "to", "ha", "ci", "da", "ra", "bi", "vo", "tas", "wri", "sta"]
+			}, {
+				"s": "the",
+				"x": []
+			}, {
+				"s": "ht",
+				"x": ["copyrig, fig"]
+			}, {
+				"s": "dt",
+				"x": ["roun"]
+			}, {
+				"s": "ol",
+				"x": ["ex", "s", "vi", "par", "is"]
+			}, {
+				"s": "an",
+				"x": ["cle", "gle", "lo", "be"]
+			}, {
+				"s": "gg",
+				"x": ["flo", "hux"]
+			}, {
+				"s": "gr",
+				"x": ["inte"]
+			}, {
+				"s": "be",
+				"x": ["pro"]
+			}, {
+				"s": "ok",
+				"x": ["rev", "bo", "co", "sm", "p"]
+			}, {
+				"s": "ly",
+				"x": ["f"]
+			}, {
+				"s": "ish",
+				"x": ["f", "rel", "pun", "per", "publ", "tarn", "abol", "cher", "distingu", "accompli", "establi", "repleni", "vanqu"]
+			}, {
+				"s": "cin",
+				"x": ["medi"]
+			}, {
+				"s": "f",
+				"x": ["ef", "af", "sur", "ree", "buf", "out", "snif", "bluf", "inef"]
+			}, {
+				"s": "rri",
+				"x": ["ca", "ma"]
+			}, {
+				"s": "sc",
+				"x": ["confi", "ca"]
+			}, {
+				"s": "up",
+				"x": ["co", "gro", "d"]
+			}, {
+				"s": "re",
+				"x": ["sha", "spa", "fi", "hi"]
+			}]
+		}, {
+			"s": "al",
+			"x": [{
+				"s": "lli",
+				"x": ["pa"]
+			}, {
+				"s": "thmic",
+				"x": ["ry", "rhy"]
+			}, {
+				"s": "thr",
+				"x": ["e", "i"]
+			}, {
+				"s": "ue",
+				"x": ["sq"]
+			}, {
+				"s": "ibi",
+				"x": ["st", "t"]
+			}, {
+				"s": "bi",
+				"x": ["cox", "com", "rhom", "cu"]
+			}, {
+				"s": "olic",
+				"x": ["b"]
+			}, {
+				"s": "sic",
+				"x": ["o"]
+			}, {
+				"s": "astic",
+				"x": ["ecclesi", "org"]
+			}, {
+				"s": "eral",
+				"x": ["f"]
+			}, {
+				"s": "licid",
+				"x": ["locu"]
+			}, {
+				"s": "teroid",
+				"x": ["s"]
+			}, {
+				"s": "eroy",
+				"x": ["vic"]
+			}, {
+				"s": "ygi",
+				"x": ["pter", "urop", "syz"]
+			}, {
+				"s": "hin",
+				"x": ["tric", "r"]
+			}, {
+				"s": "asur",
+				"x": ["s"]
+			}, {
+				"s": "ho",
+				"x": ["s"],
+				"f": 1
+			}, {
+				"s": "ast",
+				"x": ["co"],
+				"f": 1
+			}, {
+				"s": "clic",
+				"x": ["cy"],
+				"f": 1
+			}]
+		}, {
+			"s": "ary",
+			"x": []
+		}, {
+			"s": "ful",
+			"x": []
+		}, {
+			"s": "ic",
+			"x": []
+		}, {
+			"s": "ical",
+			"x": []
+		}, {
+			"s": "ish",
+			"x": []
+		}, {
+			"s": "ss",
+			"x": [{
+				"s": "e",
+                                "x":["l"],
+				"not": ["p"]
+			}]
+		}, {
+			"s": "ing",
+			"x": []
+		}, {
+			"s": "ive",
+			"x": []
+		}, {
+			"s": "like",
+			"x": []
+		}, {
+			"s": "ly",
+			"x": []
+		}, {
+			"s": "ous",
+			"x": []
+		}, {
+			"s": "y",
+			"x": []
+		}],
+		"noun": [{
+			"s": "ies",
+			"x": []
+		}, {
+			"s": "al",
+			"x": []
+		}, {
+			"s": "ance",
+			"x": []
+		}, {
+			"s": "ence",
+			"x": []
+		}, {
+			"s": "ery",
+			"x": []
+		}, {
+			"s": "tion",
+			"x": []
+		}, {
+			"s": "sion",
+			"x": []
+		}, {
+			"s": "sure",
+			"x": []
+		}, {
+			"s": "ment",
+			"x": []
+		}, {
+			"s": "age",
+			"x": []
+		}, {
+			"s": "ing",
+			"x": []
+		}, {
+			"s": "ery",
+			"x": []
+		}, {
+			"s": "ss",
+			"x": [{
+				"s": "e",
+                                "x": ["n"],
+				"not": ["p"]
+			}]
+		}, {
+			"s": "ity",
+			"x": []
+		}, {
+			"s": "ism",
+			"x": []
+		}, {
+			"s": "th",
+			"x": []
+		}, {
+			"s": "ty",
+			"x": []
+		}, {
+			"s": "y",
+			"x": []
+		}]
+	},
+	"suffixDeriv": ["ly", "ist", "ment"],
+	"inflect": ["ing", "er", "s", "est", "en", "ed"],
+	"prefixes": {
+		"negative": ["a", "dis", "il", "in", "im", "ir", "non", "un"],
+		"miscle": ["de", "dis", "ex", "mis", "pre", "pro", "re", "con"]
+	}
+}

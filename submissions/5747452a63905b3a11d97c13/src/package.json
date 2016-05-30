@@ -1,0 +1,20 @@
+{
+  "name": "hola-challenge-words",
+  "version": "1.0.0",
+  "description": "Hola challenge words",
+  "main": "out/solution.js",
+  "directories": {},
+  "dependencies": {},
+  "devDependencies": {
+    "uglify-js": "mishoo/UglifyJS2#e36e07fa77859bcd461234856c06c95cee0cfffe"
+  },
+  "scripts": {
+    "test": "build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "author": "Antelle",
+  "license": "MIT"
+}

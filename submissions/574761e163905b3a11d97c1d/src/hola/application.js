@@ -1,0 +1,1 @@
+function check(r){var n=require("fs"),t=n.readFileSync("words.txt").toString().split("\n");for(i in t)if(t[i]===r)return!0;return!1}

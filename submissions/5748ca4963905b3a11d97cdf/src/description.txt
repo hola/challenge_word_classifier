@@ -1,0 +1,131 @@
+Конкурс по программированию на JS: Классификатор слов
+https://habrahabr.ru/company/hola/blog/282624/
+
+Фильтр Блума
+https://habrahabr.ru/post/112069/
+
+Всего слов	661686
+Уникальных	630404
+Слов без '	489989
+Слов с '	140415	(нужно анализировать отдельно)
+Слов с несколькими '	66	(в самом коротком 4 буквы, 2 тильды)
+
+Слов с окончанием 's	140084	(57 со второй тильдой, 140027 без)
+Слов без ' с окончанием s	131944	(es 38868)
+
+if
+tilda=-1
+many=0
+then
+count=344
+
+Концы
+End	Cnt
+s	131944
+e	66563
+y	40201
+d	37250
+
+End	Cnt
+es	38868
+ed	26565
+ng	23420
+er	17668
+ly	17375
+ic	13579
+on	13199
+al	13062
+ss	13007
+us	11810
+le	11683
+te	11355
+rs	10746
+ns	10292
+
+End	Cnt
+ing	22653
+ess	12415
+ses	9410
+ies	8796
+ion	8794
+ers	8225
+ous	7358
+ted	6076
+
+End4	Cnt
+ness	9776
+tion	7326
+sses	5096
+able	4742
+ting	4620
+ally	4531
+ions	4161
+ings	3368
+
+End5	Cnt
+ation	5690
+esses	4760
+tions	3561
+cally	2776
+eness	2732
+ities	2280
+ating	2017
+ingly	1809
+ility	1653
+sness	1514
+ously	1344
+iness	1338
+ative	1308
+ising	1276
+ville	1273
+dness	1244
+ively	1068
+ering	1045
+ments	964
+
+End6	Cnt
+nesses	4397
+ations	2807
+ically	2722
+bility	1523
+leness	1272
+lities	1232
+usness	1148
+edness	1005
+
+End7	Cnt
+bleness	1193
+enesses	1158
+ability	1151
+ousness	1146
+tically	1141
+
+End8	Cnt
+ableness	951
+bilities	788
+ological	576
+isations	523
+lenesses	506
+
+End9	Cnt
+abilities	594
+ousnesses	472
+blenesses	467
+ification	401
+
+End10	Cnt
+ablenesses	368
+ologically	214
+iousnesses	199
+tivenesses	193
+lessnesses	191
+
+End11	Cnt
+graphically	133
+ativenesses	77
+alistically	71
+tablenesses	69
+ometrically	66
+
+End12	Cnt
+ographically	113

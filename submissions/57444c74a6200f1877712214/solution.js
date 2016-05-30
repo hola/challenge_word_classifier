@@ -1,0 +1,1 @@
+var d;module.exports={init(b){d=JSON.parse(b.toString())},test(w){var l=w.length,h=(w=>{var s=0;for(var c of w)s+=c.charCodeAt(0);return s})(w);return l in d&&h in d[l]&&new RegExp(d[l][h]).test(w)}}

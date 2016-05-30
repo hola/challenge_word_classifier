@@ -1,0 +1,28 @@
+{
+  "name": "words",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./src/ --presets=es2015,stage-2 --modules=amd --out-dir=./lib --source-maps inline"
+  },
+  "keywords": [
+    "words"
+  ],
+  "author": "Kostya Kurilov",
+  "license": "ISC",
+  "dependencies": {
+    "rx": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-uglify": "^1.0.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "webpack": "^1.13.1"
+  }
+}

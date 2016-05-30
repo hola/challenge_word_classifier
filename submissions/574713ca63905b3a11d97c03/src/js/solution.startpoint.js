@@ -1,0 +1,1 @@
+exports.init=function(w){eval(w.toString('ascii',%JS_CODE_START%));k(w);exports.test=l}

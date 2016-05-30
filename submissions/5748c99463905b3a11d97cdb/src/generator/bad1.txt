@@ -1,0 +1,2 @@
+not-words list https://hola.org/challenges/word_classifier/testcase
+one word per line, I have about one million

@@ -1,0 +1,53 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf130
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww16540\viewh11960\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+JS Challenge Spring 2016: Word Classifier\
+========\
+\
+Implementation description\
+========\
+I thought a lot about how to compress the dictionary in order to fit the size limitations. This subject is all new to me and not something that I encounter during my work.\
+The best solution that I came up with is to use a Bloom filter. I also read about Cuckoo filter which supposed to be better but couldn\'92t find enough practical examples and didn\'92t have the spare time to implement and test it.\
+In order to get the filter effective, I needed to reduce the number of words. \
+I used a stem porter algorithm and run every word through it.\
+In addition I cut out all the words that have length higher then 15 since the purpose is to get the highest score and false negative restriction is not a requirement. I just saw that this number (15) gives me higher score.\
+I also cut all the words that don\'92t start with a-z\
+\
+Implementation algorithm\
+========\
+1. load the words from file\
+2. remove words longer then 15 characters\
+3. run every word through stem algorithm\
+4. remove duplicates\
+5. add every word to bloom filter\
+6. gzip bloom filter and save in solution dir\
+\
+in solution.js\
+========\
+1. load gzipped bloom filter and apply it\
+2. for every word that is tested, run it through bloom filter to get true/false, as long as it\'92s no longer then 15 characters and starts with a-z\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 results\
+========\
+I got around 77-78% success when loading your JSON 1000 times.\
+\
+resources\
+========\
+I have used several resources and modified them to my needs:\
+1. bloom filter - I have test severals. This one perform the best, all the info is inside. I have upgraded the code to use Buffers {\field{\*\fldinst{HYPERLINK "https://github.com/sbyrnes/bloom.js"}}{\fldrslt https://github.com/sbyrnes/bloom.js}}\
+2. stem porter - {\field{\*\fldinst{HYPERLINK "https://www.npmjs.com/package/stem-porter"}}{\fldrslt https://www.npmjs.com/package/stem-porter}}\
+3. I have used this website to uglify my code, default settings: {\field{\*\fldinst{HYPERLINK "https://skalman.github.io/UglifyJS-online/"}}{\fldrslt https://skalman.github.io/UglifyJS-online/}}\
+\
+files attached\
+========\
+1. solution.js - the uncompressed solution file\
+2. data.dat - the ungzipped bloom filter (Buffer)\
+3. this read file\
+\
+Thanks for this challenge that taught me things I wasn\'92t aware of like bloom filters and the english world Llanfair\'adpwllgwyngyll\'adgogery\'adchwyrn\'addrobwll\'adllan\'adtysilio\'adgogo\'adgoch :) (which is marked by my MAC as a non valid word :))}

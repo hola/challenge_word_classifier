@@ -1,0 +1,1 @@
+module.exports=new function(){this.init=function(a){str_len=a.readUInt32LE(0);eval("this.t = "+a.toString("utf8",4,str_len+4));this.d=a.slice(str_len+4)};this.test=function(a){return this.t(this.d,a)}};

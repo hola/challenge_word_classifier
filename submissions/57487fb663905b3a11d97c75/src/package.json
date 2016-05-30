@@ -1,0 +1,16 @@
+{
+  "name": "word-classifier-challenge",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "learn": "node main.js learn",
+    "test": "node main.js test"
+  },
+  "author": "Danyil Bohdan",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "latest",
+    "babel-preset-es2015": "latest"
+  }
+}

@@ -1,0 +1,59 @@
+This is a solution for Hola "word classifier" problem of 2016.
+It should score at least 76.9%
+
+File "solution.js" is just a loader. It extracts real init and real test 
+functions from the buffer.
+
+Real solution is located in "QQ.js". It is hand-written and not obfuscated,
+though I tried to make it somewhat gzip-friendly: Ñmost of whitespace and
+indentaion was deleted, variable names are not so descriptive etc.
+
+The logic is as follows:
+1. At init stage, preffix-suffix trie is deserialized out of the buffer.
+2. Words of length < 3 get exact answers (using bit array for 2-letter words,
+located in "buf2.bin").
+3. Words of length > 15 return false (P>87%).
+4. No dictionary word begins or ends with apostrophe sign.
+5. All other words are checked first against forbidded 3-letter combinations
+(using bit array located in "stop3.bin") - these combinations are more
+likely to be present in non-word than in dictionary word.
+6. And the final test is a lookup in the preffix-suffix trie.
+
+This solution was trained on 200000 blocks of test data.
+Scripts for downloading these blocks are in "dump" directory.
+
+All training code is written in Perl. The following scripts were used
+(included in this release):
+  perl stop23.pl 200000 > result3.txt # generate stop-list of 3-letter combinations
+  perl ch43-export.pl 200000 # generates classes.txt
+    # this also generates some Bloom filters, ignored in this release
+  perl trieH.pl > RES # generates trie.bin
+    # it spits out A LOT OF diagnostic output, redirect it to a file
+Unfortunately I can't guarantee that exactly same trie will be generated
+by exactly this command sequence 'cause in real development I ran different
+parts on different machines. 
+
+All other invocations are in Makefile rules.
+
+Trie is encoded as 4 bytes per node.
+Bit 31 : 1 if this node is inner node (has leafs)
+Bit 30 : 1 if this node matches exact word (prefix+suffix is a member of 
+  dictionary)
+Bit 29 : 1 if next letter considered is from suffix, 0 - from prefix
+Bit 0-26 : one bit for each letter from alphabet. For inner node 1 means
+  that a leaf is present pointed by this letter. For a leaf node this bit
+  defines what result to return in case of this letter.
+Bit 27-28 : reserved for 2 special letters, not used in this release - always 0.
+
+Firstly full trie is constructed that contains exact information about dictionary
+words and non-words. Expansion is recursive, starting from root which
+matches any words. On each step a decision is made on whether to expand a 
+subtree using letter from prefix or from suffix. C4.5-like criterion 
+(information gain / entropy gain ratio) is used. 
+
+Then trie is pruned started from the leafs, using greedy tactics (minimizing 
+ratio of false answers increment / number of nodes deleted), until size limit 
+is satisfied.
+
+Serialization is done breadth-first - this gives better compression rate than
+depth-first even though deserializing code is a bit longer. 

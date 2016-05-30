@@ -1,0 +1,16 @@
+{
+  "name": "is-it-english",
+  "version": "0.0.1",
+  "description": "Detects if a word is likely to be English. My entry for the Hola's spring 2016 JS challenge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "James Wright <james@jamesswright.co.uk>",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^1.1.3",
+    "easy-table": "^1.0.0",
+    "request": "^2.72.0"
+  }
+}

@@ -1,0 +1,1 @@
+var a;module.exports={init:function(b){a=eval(b.toString())},test:function(b){return a(b)}}

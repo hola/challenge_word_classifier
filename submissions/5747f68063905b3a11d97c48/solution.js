@@ -1,0 +1,1 @@
+let g;exports.init=d=>{g=d;};exports.test=w=>eval(''+g.slice(66617));

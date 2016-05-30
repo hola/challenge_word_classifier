@@ -1,0 +1,1 @@
+﻿node test ../../temp/ID246/ ../../testcases

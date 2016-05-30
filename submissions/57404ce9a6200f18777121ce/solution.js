@@ -1,0 +1,1 @@
+exports.init=function(d){this.test=function(w){while(w.length<5)w="&"+w;function t(f,z,o,l){r=1;for(i=0;i<w.length-l+3;i++){v=("&"+w+"&").substr(i,l),p=1;for(j=0;j<l;j++){c=v.charCodeAt(j);p=(p*f+(c<97?c-38:c-95))%z}r&=!!(d[o+p/8>>0]&(128>>(p%8)))}return r}return(w.length<25)&t(31,596983,0,7)&t(41,15467,74623,3)}}//-A. Skrobov, 2016

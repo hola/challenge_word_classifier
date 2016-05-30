@@ -1,0 +1,15 @@
+{
+  "name": "is-it-english-learner",
+  "version": "1.0.0",
+  "description": "A tool that takes portions of false test case words to see if they're likely to be English",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Wright <james@jamesswright.co.uk>",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^9.2.0",
+    "request": "^2.72.0"
+  }
+}

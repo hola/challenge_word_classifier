@@ -1,0 +1,21 @@
+{
+  "name": "Hola",
+  "description": "",
+  "version": "0.0.1",
+  "main": "./Hola.js",
+  "author": {
+    "name": "Qualtagh",
+    "email": "xgzaaa@gmail.com"
+  },
+  "keywords": [],
+  "licenses": {
+    "type": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/YOUR_LOGIN/Hola.git"
+  },
+  "bugs": {
+    "url": "http://github.com/YOUR_LOGIN/Hola/issues"
+  }
+}

@@ -1,0 +1,15 @@
+My approach:
+
+1) First do (easy) stemming as much as possible, such as merging apostrophes with their original
+words, and also to merge the various tenses of a verb to one form.
+
+2) Generate a hashtable of the given words.
+
+3) Given a word, first stem the word, and then check against the hashtable whether it exists in
+the dictionary or not.
+
+This approach is pretty effective in identifying "true" words, but failed to identify many
+"false" words possibly due to collision in the hashtable. I could have used ngrams to address this
+as they might be helpful in identifying the patterns of non-English words.
+
+I used Python to implement several preliminary scripts. The config.py file is omitted.

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# http://redsymbol.net/articles/unofficial-bash-strict-mode/
+# http://www.gnu.org/software/bash/manual/bash.html#The-Set-Builtin
+set -o nounset  # Treat unset variables as an error when substituting
+set -o errexit  # Exit immediately if a command exits with a non-zero status
+set -o pipefail # Status code of a pipeline will be the status code of first failed command in it or 0
+
+script=`readlink -f $0`
+scriptdir=`dirname $script`
+scriptname=`basename $script`
+
+d=`cd $scriptdir; git rev-parse --show-toplevel`
+
+cd $d
+npm install

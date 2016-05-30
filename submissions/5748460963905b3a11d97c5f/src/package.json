@@ -1,0 +1,23 @@
+{
+  "name": "dictionary",
+  "version": "1.0.0",
+  "description": "Welcome to Hola programming challenge!",
+  "main": "webpack.config.js",
+  "scripts": {
+    "trainer:cases": "node trainer/cases.js",
+    "trainer:build": "node trainer/build.js",
+    "trainer:test": "node ./trainer/test.js",
+    "build": "rm -rf ./build/* && webpack && gzip -c ./data/data > ./build/data.gz",
+    "test": "node ./tests/test.js ./build ./data/cases/test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "copy-webpack-plugin": "^3.0.0",
+    "sync-request": "^3.0.1",
+    "webpack": "^1.13.1"
+  }
+}

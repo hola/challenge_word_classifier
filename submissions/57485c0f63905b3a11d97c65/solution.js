@@ -1,0 +1,1 @@
+exports.init=(B,O)=>eval(B.toString('utf8',0,O=894))

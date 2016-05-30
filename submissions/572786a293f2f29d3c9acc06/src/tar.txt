@@ -1,0 +1,2 @@
+There are less than 6% words longer than 14 symbols in the provided dictionary.
+Fake words have greater length more frequently.

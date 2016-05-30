@@ -1,0 +1,2 @@
+prime numbers list, from 2 to 15485863
+one per line

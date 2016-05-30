@@ -1,0 +1,1 @@
+Hash-based 80% solution

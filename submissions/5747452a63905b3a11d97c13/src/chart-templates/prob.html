@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Words</title>
+    <script src="../node_modules/highcharts/highcharts.js"></script>
+</head>
+<body style="height: 100%" id="body">
+<script>
+    var colors = Highcharts.getOptions().colors;
+    var chart = new Highcharts.Chart({
+        chart: {
+            animation: false,
+            renderTo: 'body',
+            height: 600,
+            zoomType: 'xy'
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            shared: true
+        },
+        xAxis: [{
+        }],
+        yAxis: {
+            title: { text: null },
+            labels: { format: '{value:.2f}' },
+            minorGridLineDashStyle: 'dot',
+            minorTickInterval: .05,
+            min: 83, max: 84
+        },
+        plotOptions: {
+            series: {
+                states: { hover: { enabled: false } }
+                // stacking: 'normal'
+            }
+        },
+        series: [/*{
+            name: 'Rate',
+            type: 'column',
+            color: 'rgba(0,0,0,.1)',
+            data: data_rate
+        }, */{
+            name: 'Sliding Average 1k',
+            type: 'spline',
+            color: colors[3],
+            data: data_sl_avg
+        }, {
+            name: 'Total Average',
+            type: 'spline',
+            color: colors[0],
+            data: data_avg
+        }]
+    });
+</script>
+</body>
+</html>

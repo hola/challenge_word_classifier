@@ -1,0 +1,1 @@
+(function(e){function f(b){for(var a=5381,d=0;d<b.length;d++)var a=(a<<5)+a,c="0abcdefghijklmnopqrstuvwxyz'".indexOf(b[d]),a=a^(-1!=c?c+1:1);return a}exports.init=function(b){c=b};exports.test=function(b){b=b.toLowerCase();var a=b.length;if(2>a)return-1==b.indexOf("'");if(14<a)return!1;a=e.abs(f(b))%552800;b=a%8;a=c.readUInt8(a/8|0);return!!(a&1<<b)};var c})(Math);

@@ -1,0 +1,9 @@
+[package]
+name = "holadiv"
+version = "0.1.0"
+authors = ["Alexey Voznyuk <me@swizard.info>"]
+
+[dependencies]
+crossbeam = "0.2"
+byteorder = "0.5"
+getopts = "0.2"

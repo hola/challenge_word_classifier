@@ -1,0 +1,19 @@
+{
+  "name": "iseng",
+  "version": "1.0.0",
+  "description": "`Iseng` more or less means \"just for fun\". As the name suggest, this module is created just for fun. Nothing to see here..",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "english"
+  ],
+  "author": "Kiki Luqman Hakiem <kiki.hakiem@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^2.4.1"
+  }
+}

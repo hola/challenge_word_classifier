@@ -1,0 +1,12 @@
+# IDE
+/.idea
+
+# Logs
+/*.log
+
+# 3rd party modules dir
+/node_modules
+
+# gen files
+/data.dict
+/data.gz

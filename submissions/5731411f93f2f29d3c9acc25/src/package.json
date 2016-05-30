@@ -1,0 +1,24 @@
+{
+  "name": "Words",
+  "version": "1.0.0",
+  "scripts": {
+    "__install": "npm install && typings install",
+    "run": "tsc ./App/Main.ts ./App/Interfaces.d.ts ./App/TestModule.ts ./typings/main.d.ts --m commonjs -t ES5 && node ./App/Main",
+    "minify": "uglifyjs --name-cache --compress -e --mangle \"\" ./App/TestModule.js -o ./App/Test.js",
+    "__compile & fill database": "tsc ./App/FillDataBase.ts ./typings/main.d.ts --m commonjs -t ES5 && node ./App/FillDataBase",
+    "__compile & load test cases": "tsc ./App/LoadTestCases.ts ./typings/main.d.ts --m commonjs -t ES5 && node ./App/LoadTestCases",
+    "__compile & build tree": "tsc ./App/BuildTree.ts ./App/Interfaces.d.ts ./typings/main.d.ts --m commonjs -t ES5 && node ./App/BuildTree",
+    "pack data": "tsc ./App/BuildTree.ts ./App/Interfaces.d.ts ./typings/main.d.ts --m commonjs -t ES5 && node ./App/BuildTree && tsc ./App/PackData.ts ./typings/main.d.ts --m commonjs -t ES5 && node ./App/PackData",
+    "pack data & run": "tsc ./App/BuildTree.ts ./App/Interfaces.d.ts ./typings/main.d.ts --m commonjs -t ES5 && node ./App/BuildTree && tsc ./App/PackData.ts ./typings/main.d.ts --m commonjs -t ES5 && node ./App/PackData && tsc ./App/Main.ts ./App/TestModule.ts ./typings/main.d.ts --m commonjs -t ES5 && node ./App/Main"
+  },
+  "license": "Free",
+  "dependencies": {
+    "crc": "^3.4.0",
+    "crc-32": "^0.4.0",
+    "event-stream": "^3.3.2",
+    "lodash": "^4.12.0",
+    "minify": "^2.0.8",
+    "pg-promise": "^4.0.9",
+    "request": "^2.72.0"
+  }
+}

@@ -1,0 +1,2 @@
+module.exports={init:(a)=>d=a,test:function(a){if(/.{17}|^'|'$|[^eyuioa']{5}|'[^s]|'s.|yy|qul|ooo|lll|sss|w[xqj]|d[xq]|x[jzkqgxr]|j[^'adeinorsu]|yq|k[xzq]|hx|g[xq]|f[qxzvj]|t[xq]|v[qjbxwfzhpgm]|m[xq]|sx|p[xqz]|c[xj]|q[^'aisu]|b[xqz]|z[xjqf]/.test(a))return!1;if(1==a.length)return!0;a=a.replace(/'s$/,"").replace(/s$/,"");7<a.length&&(a=a.substr(0,4)+a.substr(a.length-3));for(b=2166136261,c=0;c<a.length;c++)b^=a.charCodeAt(c),b+=(b<<1)+(b<<4)+(b<<7)+(b<<8)+(b<<24);b=(b>>>0)%662400;return 1==(d[b>>
+3]>>>(b&7)&1)}};

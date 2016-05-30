@@ -1,0 +1,145 @@
+
+* Basic approach and the problem *
+
+The usage of Bloom filters is considered to be the best approach for the class of tasks similiar to the given one.
+Having ~630000 dictionary words, and ~64k table size, one can calculate that the optimal hash functions count is less than 1, and error probability is 0.7 .
+Also the data of such Bloom table can't be compressed efeectively since the table is almost uniformly filled by set and not set bits.
+
+
+* Morphological reduction approach *
+
+Reducing of the bloomed word set would allow us to lower Bloom filter false positive count.
+But if we will reduce the intital set indicriminately, we will get the false negative amount raised accordingly.
+We will try to make reducement rules in such a way that for almost every discarded item N there will be a bloomed item N' related to the N as follows:
+- The N' should be trivially constructed from N (the trivial algorithm is needed to save space).
+- In most cases when N is discarded, there should be dictionary item N' which is left non-discarded.
+
+Since it's obvious that the dictionary data is not uniformly distributed, there is a possibility that the initial data set volume can be reduced.
+We know that the data is strongly based on the actual English language.
+Therefore:
+- The dictionary words mostly have the structured form: prefix, base (or probably multiple bases), suffix.
+- The amount of unique prefixes and suffixes in English is much lower than the amount of bases.
+- Dictionary data can't be efficiently procedurally generated since the rules of combining word parts into actual words in English are relatively chaotic.
+- It is improbable that the uniform reaarangent of letters (such as asdfg=>safdg, zxc=>xz_c...) will reduce the entropy of the dictionary except for the trivial cases, such as the full word reversal.
+
+So, the idea is that the trivial reducement rule for items bloomed is stripping prefixes and suffixes form the words and including them in the algorithm.
+For example, for dictionary words N'="dog" and N="dogs" the rule would be "strip 's' from the end".
+The suffix/prefix should be moved to the algorithm only when there are many Ns with such part, and when the N is the dictionary word for most of them.
+
+The simliar rules are grouped into one rule with the usage of exception subrules.
+Many words, for example, have "s" suffix for plural form. We would like to use the rule N="...s"=>N'="...", but there is an exception: N="...is" rarely means that there is N'="...i" in dictionary.
+In this case the rule will be "strip 's' from the end except when the end is 'is'".
+
+Additinaly to removing word parts we shoud swap them, for example for the alternative plural suffix N="...ses"=>N'="...s".
+
+The multiple bases folding approaches were not considered.
+Multiple base words are partially procesed when one of the bases is considered as frequently occuring suffix or prefix.
+
+If the N is to be discarded but it is used as an N' for another word, then it is not discarded.
+
+
+* Statistical reduction approach *
+
+The characteristics of the test word set should be considered too.
+The test word set is not uniform and contains many "almost" words. But there are many "total" nonwords in the "i've-got-cat-on-the-keyboard" style also.
+Though for "almost" words we should rely on Bloom filter only (obtaining a share of false positives), the "total" nonwords could be filtered out without blooming.
+
+Total nonwords are different in following ways:
+
+- Too long continious consonant sequences, uncharacteristical for most English words.
+All words with the consonant sequence of 5 or more are considered nonwords.
+
+- Uncharacteristical length distribution.
+It is noted that the share of too long nonwords is much higher than the share of too long dictionary words.
+All words with a length 16 or more are considered nonwords.
+This filters out some typical clumsy "almost" words such as "dosurousatconousneses".
+
+- Uncharacteristical letter combinations.
+The lists of characteristical pair letter combinations are built - starting dictionary words, ending dictionary words, conatined in dictionary words.
+If the pair occurs in its corresponding place in more than 1/15000 of dictionary words, it is considered characteristical.
+Other pairs are considered noncharacteristical ("nonpairs").
+Words containing nonpais in corresponding places are considered non words.
+Apostrophe is a separate case.
+It is presumed that a dictionary word can contain only one apostrophe, and that the apostrophe can be located at 2nd, 3rd, or 2nd from the end position only.
+
+All "nonword-similiar" dictionary words are discarded before building Bloom table.
+
+
+* C++ Toolset *
+
+The C++ toolset code (x64) is contained in two files.
+C++ is used as a basic tool language because of its faster handling of complex (string) computations and large data sets.
+
+Some functions are multithreaded.
+Because of buggy std::mutex implementation in VC++ (I can't explain it any other way) some functions sometimes crash on first iteration.
+Restart multiple times till success.
+
+Some pecularites of the code are introduced to:
+- Consume a realistic amount of RAM.
+- Minimize deallocation overhead for large STL collections.
+
+params.h
+
+transformations - Transformations (reduction rules) list.
+Rules are added and finetuned manually.
+
+Other manually edited settings.
+
+main.cpp
+
+calculate_delta_error() - Calculates an approximate profitablity (error probability reduction) for the reduction rule considered.
+
+precheck() - Statistical reduction.
+
+transform() - precheck() + Morphological reduction + precheck() again (it's useless to search or include statistically discarded words in the bloom table).
+
+nonpairs() - Creates nonpairs tables file for C++ and JS toolsets.
+
+stat() - Utility statistics.
+
+bloom() - Creates Bloom table file and reduction rules file for JS toolset.
+
+dictionary_stem() - Splits dictionary words into parts. Calculates parts' occurence count and their mutual occurence count (correllation).
+Results are saved into correllation file.
+
+sample_stem() - Splits test set words into parts. Calculates parts' occurence frequency.
+Results are saved into correllation file.
+
+unstem() - Sorts correllation data and proposes best rated rules.
+Reads correllation file, writes proposed rules to the file.
+
+iterate_bloom() - Makes assesment of actual rule profitablility, also regarding possible exceptions.
+Reads proposed rules from the file, writes recommended profitable variations of rules to the file.
+Recommended rules are manually reviewed and then added into params.h.
+
+iterative_bloom() - Creates temporary Bloom table for the assesment of the actual rule profitablity.
+
+do_check_bloom() - Calculates an actual rule profitablity (for the test set given).
+
+
+* JS Toolset *
+
+engine.js - main engine.
+The code is manually "minified" to be more effectively compressed by gzip.
+Contains detailed comments.
+The Pearson hash is used for blooming because of its quite compact code providing acceptable uniformity of hashes.
+
+pack.js - creates gzipped data file consisting of:
+- engine.js with whitespace and comments skipped, "inlines" expanded.
+- Reduction rules.
+- Nonpairs tables.
+- Bloom table.
+Creates the bootstrap loader "solution.js".
+
+solution.js - Autogenerated.
+Initially exports init() function only, to save space.
+Exports test() funtion after init() call.
+The official test supports such iterative way of exports initialization.
+See pack.js for full initalization variation (~+5 bytes).
+
+settings.js - Settings to use for testing and for intermediate files creation.
+
+test.js - mutithreaded test main module
+
+test_worker.js - mutithreaded test worker module
+

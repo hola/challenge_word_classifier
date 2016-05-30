@@ -1,0 +1,4 @@
+/node_modules
+/src/**/a.out
+/src/**/a.out.gz
+/test

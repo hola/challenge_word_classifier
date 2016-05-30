@@ -1,0 +1,46 @@
+Author: XorNur@gmail.com
+
+Solution of the problem https://habrahabr.ru/company/hola/blog/282624/
+
+The idea is not to reject any of the correct word. False words are determined by finding in them prohibited (for a given word length and position) symbol combinations
+
+Description of the algorithm
+1. The word is True if
+* One-letter word,
+* Two-letter word ending with "s",
+* Three-letter word ending with "'s",
+* Word from the list of exceptions (z) of the data file
+2. The word is False if
+* Length of the word is more than 24,
+* Word with a tilde in position other than the penultimate position followed by the character "s"
+3. Determine the type of words
+* Ending with "'s",
+* Other ending in "s",
+* Others (no "s" at the end)
+4. Take an array of rules (variable can), according to the type of the word and remove ending of the word ("'s" or "s" or nothing)
+5. Take every couple of letters (cc) of the word. Check the array of rules for the possibility of staying the pair in the word of length l and in the corresponding position t. If a pair of letters does not can be staying in the words of length l in the position t, then the word is False
+6. Else the word is True
+
+data file
+The data file consists of two parts
+1. The list of exception words
+This is a list of True words, which do not satisfy the imposed rules (for example, correct words which longer than 24 characters)
+For the size economy the words stored in the data file in alphabetical order with the reduction of the current word on the common with the previous word prefix. A length of the common prefix used as words delimiter
+2. Valid positions of character combinations
+There are three blocks of bits, one block for each type of words. In each block are sequentially areas corresponding to different pairs of letters (aa, ab, ..., zz). The first 24 bits of the area (Bits of Length) store information about the possibility of staying a pair of letters in words which length equal to the bit number. Next bits of the area are Bits of Position. For each possible length of words there are bits (2 to 23 bits, depending on the length), showing in which positions of words the pair of letters may occur. The Bits of Position are not needed if the Bit of Length is 0 and if the length is equal to 2 (as the position could be one only)
+
+Bugs
+The imported function test incorrectly defines the type of test words. Because of what type of words is always equal to 2
+Must be
+	var q=2
+	if(/.s$/.test(w))
+		q=1
+	if(/.'s$/.test(w))
+		q=0
+instead
+	var q=2
+	if(/^.s$/.test(w))
+		q=1
+	if(/^.'s$/.test(w))
+		q=0
+I do not have enough free time

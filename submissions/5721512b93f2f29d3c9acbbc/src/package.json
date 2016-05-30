@@ -1,0 +1,15 @@
+{
+  "name": "bullshit-contest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bullshit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.0.2",
+    "lodash": "^4.11.1"
+  }
+}

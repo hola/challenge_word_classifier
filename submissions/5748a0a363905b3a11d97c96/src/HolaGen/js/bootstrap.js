@@ -1,0 +1,1 @@
+﻿exports.init=b=>eval(b.slice($SCRIPT_OFFSET$).toString())

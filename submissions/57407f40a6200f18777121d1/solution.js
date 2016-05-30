@@ -1,0 +1,1 @@
+d=new Set;exports.test=w=>d.has(w)|d.add(w)

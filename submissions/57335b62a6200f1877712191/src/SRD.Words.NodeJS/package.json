@@ -1,0 +1,15 @@
+{
+  "name": "SRD.Words",
+  "version": "1.0.0",
+  "description": "English words detection module",
+  "main": "module.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "keywords": [
+    "Words",
+    "detection"
+  ],
+  "author": "Rostislav Nikitin",
+  "license": "ISC"
+}

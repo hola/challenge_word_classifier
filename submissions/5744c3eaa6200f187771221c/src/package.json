@@ -1,0 +1,17 @@
+{
+  "name": "word-classifier",
+  "version": "0.0.1",
+  "description": "Word Classifier",
+  "private": true,
+  "main": "index.js",
+  "engine": "node >= 6.0.0",
+  "scripts": {
+    "prepublish": "npm prune",
+    "outdated": "npm outdated --depth=0"
+  },
+  "dependencies": {
+    "lodash": "^4.11.2",
+    "q": "^1.4.1",
+    "request-promise": "^3.0.0"
+  }
+}

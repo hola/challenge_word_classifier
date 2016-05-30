@@ -1,0 +1,20 @@
+{
+  "name": "bloom-filter",
+  "version": "1.0.0",
+  "description": "Bloom Filter",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=dev node index.js",
+    "test": "uglifyjs --compress --mangle --output main.min.js -- main.js;NODE_ENV=test node index.js"
+  },
+  "author": "Ky Quoc Viet",
+  "license": "ISC",
+  "dependencies": {
+    "es6-promise": "^3.1.2",
+    "isomorphic-fetch": "^2.2.1",
+    "webpack": "^1.13.0"
+  },
+  "devDependencies": {
+    "uglifyjs": "^2.4.10"
+  }
+}

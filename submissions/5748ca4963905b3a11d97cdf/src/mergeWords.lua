@@ -1,0 +1,550 @@
+--	сокращаем и восстанавливаем списки слов, упорядоченные по алфавиту
+
+--	symbols after z is {|}
+--print(string.char(3+('z'):byte()))
+
+local	except=[[
+word
+a'asia
+a'body
+ain't
+akwa'ala
+aldiborontiphoscophornia
+aldiborontiphoscophornia's
+all'antica
+all'italiana
+all'ottava
+amn't
+an'a
+an't
+antidisestablishmentarian
+antidisestablishmentarianism
+antidisestablishmentarianisms
+antiestablishmentarianism
+antiestablishmentarianisms
+anybody'd
+aren't
+ar'n't
+a'thing
+baha'i
+baha'i's
+baha'ullah
+baha'ullah's
+bahc'ae
+baws'nt
+betra'ying
+b'hoy
+bo's'n
+bos'n
+bo's'ns
+bo's'n's
+bos'ns
+bos'n's
+bo'sun
+bo'suns
+bo'sun's
+br'er
+ca'canny
+can't
+cap'n
+carboxymethylcellulose's
+cha'ah
+ch'an
+ch'in
+ch'ing
+ch'in's
+couldn't
+could've
+cowslip'd
+cyclotrimethylenetrinitramine
+d'accord
+d'aeth
+d'albert
+d'alembert
+d'amboise
+d'amour
+d'andre
+d'annunzio
+d'arblay
+d'arcy
+d'arcy's
+daren't
+d'arezzo
+d'arezzo's
+d'arrest
+d'art
+d'artagnan
+dasn't
+dassn't
+d'attoma
+d'avenant
+deinstitutionalization's
+demethylchlortetracycline
+der'a
+d'estaing
+d'estaing's
+d'etat
+d'ewart
+d'holbach
+diaminopropyltetramethylenediamine
+d'iberville
+dichlorodifluoromethanes
+dichlorodifluoromethane's
+dichlorodiphenyltrichloroethane
+dichlorodiphenyltrichloroethanes
+dichlorodiphenyltrichloroethane's
+didn't
+d'ignazio
+d'indy
+d'inzeo
+diphenylaminechlorarsine
+disestablishmentarianism
+disestablishmentarianisms
+doctors'commons
+doesn't
+d'oeuvre
+dog'sbane
+don't
+don'ts
+d'oria
+d'urfey
+e'en
+e'er
+electrocardiographically
+electroencephalographers
+electroencephalographer's
+electroencephalographical
+electroencephalographically
+electroencephalographies
+electroencephalography's
+entr'acte
+entr'actes
+entr'acte's
+ethylenediaminetetraacetate
+ethylenediaminetetraacetates
+ethylenediaminetetraacetate's
+fa'ard
+fatwa'd
+floccinaucinihilipilification
+floccinaucinihilipilifications
+fo'c'sle
+fo'c's'le
+fo'c'sles
+fo'c's'les
+fo'c's'le's
+fo'c'sle's
+formaldehydesulphoxylate
+freez'd
+g'day
+ge'ez
+gi'd
+gi'ing
+guv'nor
+guv'nors
+guv'nor's
+hadn't
+hain't
+ha'it
+hallowe'en
+halo'd
+ha'nt
+han't
+ha'pennies
+ha'penny
+ha'penny's
+ha'pennyworth
+ha'p'orth
+ha'p'orths
+ha'p'orth's
+hasn't
+haven't
+he'd
+he'll
+her'n
+hexamethylenetetramine's
+hippopotomonstrosesquipedalian
+his'n
+h'm
+honorificabilitudinitatibus
+honorificabilitudinities
+how'd
+howe'er
+how're
+hydrochlorofluorocarbons
+hydroxydehydrocorticosterone
+hydroxydesoxycorticosterone
+hypobetalipoproteinemia's
+i'd
+idea'd
+i'faith
+i'll
+i'm
+immunoelectrophoretically
+in't
+intercomprehensibilities
+intercomprehensibility's
+isn't
+it'd
+it'll
+i've
+j'accuse
+j'adoube
+jews'harp
+j'ouvert
+jusqu'auboutisme
+jusqu'auboutist
+jusqu'auboutiste
+kinko's's
+ko'd
+ko'ing
+k'ri
+l'addition
+l'allegro
+l'amour
+l'amour's
+landsm'al
+l'aquila
+l'avare
+l'chaim
+l'enfant
+l'envoy
+l'etranger
+levi's's
+l'hospital
+l'immoraliste
+llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch
+llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch's
+l'oeil
+l'oreal
+l'oreal's
+los'te
+l'otage
+l'ouverture
+l'ouverture's
+l'tre
+l'vov
+ma'am
+magnetothermoelectricity
+mayn't
+m'ba
+mcdonald's's
+methylenedioxymethamphetamine
+methylenedioxymethamphetamine's
+microelectrophoretically
+microspectrophotometer's
+microspectrophotometrical
+microspectrophotometrically
+microspectrophotometries
+microspectrophotometry's
+mightn't
+might've
+m'sieur
+m'taggart
+mu'adhdhin
+mu'min
+mustn't
+must've
+nasta'liq
+n'djamena
+needn't
+ne'er
+ne'erday
+n'gana
+n'importe
+nobody'd
+nonrepresentationalism's
+nor'east
+nor'easter
+north'ard
+nor'west
+nor'wester
+n't
+nuku'alofa
+o'boyle
+o'brien
+o'brien's
+o'callaghan
+o'callaghan's
+o'carroll
+o'carroll's
+o'casey
+o'casey's
+o'clock
+o'connell
+o'connell's
+o'conner
+o'conner's
+o'connor
+o'connor's
+o'dell
+o'dell's
+o'doneven
+o'doneven's
+o'donnell
+o'donnell's
+o'donoghue
+o'donoghue's
+o'donovan
+o'donovan's
+o'driscoll
+o'driscoll's
+o'dwyer
+o'er
+o'ertop
+o'fallon
+o'faolain
+o'faolcin
+o'fiaich
+o'flaherty
+ogee'd
+o'gowan
+o'gowan's
+o'grady
+o'grady's
+o'hara
+o'hara's
+o'hare
+o'higgins
+o'higgins's
+ok'd
+o'keeffe
+o'keeffe's
+o'kelley
+o'kelly
+o'kelly's
+ok'ing
+o'leary
+o'mahony
+o'mahony's
+o'malley
+o'malley's
+o'meara
+o'meara's
+o'neil
+o'neill
+o'neill's
+o'neil's
+o'reilly
+o'reilly's
+o'rourke
+o'rourke's
+o'shea
+o'shee
+o'shee's
+o'sullivan
+o'toole
+o'toole's
+oughtn't
+our'n
+overintellectualizations
+overintellectualization's
+pa'anga
+pathologicopsychological
+penn'orth
+penn'orths
+penn'orth's
+pentamethylenetetrazol's
+philosophicopsychological
+phosphatidylethanolamine
+phosphatidylethanolamines
+phosphatidylethanolamine's
+pneumonoultramicroscopicsilicovolcanoconioses
+pneumonoultramicroscopicsilicovolcanoconiosis
+po'chaise
+po'd
+polytetrafluoroethylenes
+polytetrafluoroethylene's
+preobtrudingpreobtrusion
+prorhipidoglossomorpha's
+prud'hon
+pseudointernationalistic
+pseudolamellibranchiata's
+psychoneuroimmunological
+psychoneuroimmunologists
+psychoneuroimmunologist's
+pyjama'd
+qur'an
+qur'anic
+rec'd
+regeneratoryregeneratress
+reinstitutionalization's
+samh'in
+san'a
+schizosaccharomycetaceae
+schoolma'am
+scientificophilosophical
+sec'y
+s'elp
+se'nnight
+sha'ban
+shan't
+shari'a
+shari'a's
+she'd
+she'll
+s'help
+she'ol
+shi'ite
+shi'ite's
+shouldn't
+should've
+silo'd
+snipe'sbill
+somebody'll
+someone'll
+sou'easter
+south'ard
+sou'west
+sou'wester
+stuns'l
+stuns'ls
+stuns'l's
+supercalifragilisticexpialidocious
+superincomprehensibleness
+ta'en
+ta'izz
+tallyho'd
+t'ang
+t'ang's
+tell'd
+tetraiodophenolphthalein
+that'd
+that'll
+there'd
+there'll
+they'd
+they'll
+they're
+they've
+this'll
+thyroparathyroidectomize
+tiara'd
+to'd
+today'll
+t'other
+trans'mute
+transubstantiationalists
+trinitrophenylmethylnitramine
+unidea'd
+usedn't
+usen't
+wasn't
+we'd
+we'll
+wendy's's
+we're
+weren't
+we've
+what'd
+whate'er
+what'll
+what're
+whatsoe'er
+what've
+when'd
+whene'er
+when'll
+when're
+whensoe'er
+where'd
+where'er
+where'll
+where're
+wheresoe'er
+where've
+who'd
+who'll
+who're
+who've
+why'd
+why'll
+why're
+win't
+wolf'smilk
+won't
+wouldn't
+would've
+wrong'un
+wrong'uns
+wrong'un's
+xi'an
+xi'an's
+x'ing
+y'all
+ye'se
+you'd
+you'll
+you're
+your'n
+you've
+zu'lkadah
+]]
+
+local difPos=function(a,b)
+	assert(a~=b,'a==b')
+	for i=1,#a+1 do
+		if a:sub(i,i)~=b:sub(i,i) then
+			return i
+		end
+	end
+end
+
+merge=function(txt)
+	local s
+	local pWord
+	local t={}
+	for word in txt:gmatch'%S+' do
+		table.insert(t,word)
+	end
+	table.sort(t)
+	for _,word in ipairs(t) do
+		word=word:gsub("'s$","{"):gsub("'","{")
+		if not pWord then
+			s=word
+		else
+			local p=difPos(word,pWord)
+			s=s..(p-1)..word:sub(p)
+		end
+		pWord=word
+	end
+	return s
+end
+
+unmerge=function(txt)
+	local s=''
+	local pWord
+	for word,p in txt:gmatch'([^%s%d]+)(%d*)' do
+		if pWord then
+			word=pWord..word
+			s=s..'\n'
+		end
+		s=s..word:gsub('{$',"'s"):gsub('{',"'")
+		if p then
+			pWord=word:sub(1,tonumber(p))
+		end
+	end
+	return s
+end
+
+--print(except)
+print(#except)
+local s=merge(except)
+print(#s)
+print(s)
+do
+	local f=io.open('merged.bin','wb')
+	f:write((
+		s:gsub('%d+',
+			function(d)
+				d=tonumber(d)+1
+				assert(d<64,'too big number')
+				return string.char(d)
+			end
+		)
+	))
+	f:close()
+end
+local s2=unmerge(s)
+print(#s2)
+--print(s)
+--print(s2)

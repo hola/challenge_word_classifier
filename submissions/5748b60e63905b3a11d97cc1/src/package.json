@@ -1,0 +1,17 @@
+{
+  "name": "bloomFilterSolution",
+  "version": "1.0.0",
+  "author": "Jonathan Nunez Aguin <jonathan.naguin@gmail.com>",
+  "description": "English Words challenge using a Bloom Filter",
+  "license" : "MIT",
+  "private": true,
+  "repository": {
+  },
+  "dependencies": {
+    "lodash": "^4.12.0"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+  }
+}

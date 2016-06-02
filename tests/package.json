@@ -1,0 +1,6 @@
+{
+    "dependencies": {
+        "random-js": "1.0.8",
+        "underscore": "1.8.3"
+    }
+}

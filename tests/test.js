@@ -1,43 +1,6 @@
 'use strict'; /*jslint node:true*/
 const fs = require('fs');
-const vm = require('vm');
-const zlib = require('zlib');
-
-function initialize(filename, data){
-    const id = '__hola_xyzzy__';
-    let text = fs.readFileSync(filename, 'utf8');
-    // strip BOM and/or shebang
-    text = text.slice(/^\ufeff?(#![^\r\n]*)?/.exec(text)[0].length);
-    let m = {exports: {}};
-    let console = Object.create(global.console);
-    console.log = console.info = ()=>{}; // silence debug logging
-    let context = vm.createContext({
-        module: m,
-        exports: m.exports,
-        console,
-        Buffer,
-    });
-    context.global = context;
-    vm.runInContext(
-        `(function(exports, module){${text}}).call(exports, exports, module);`,
-        context, {filename});
-    if (m.exports.init)
-    {
-        if (data)
-        {
-            Object.defineProperty(context, id, {value: data});
-            vm.runInContext(`module.exports.init(${id})`, context);
-        }
-        else
-            vm.runInContext(`module.exports.init()`, context);
-    } else if (data)
-        throw new Error('data supplied but no init function');
-    return context;
-}
-
-function test(context, word){
-    return !!vm.runInContext(`module.exports.test("${word}")`, context);
-}
+const loader = require('./loader.js');
 
 function main(target, testcases){
     if (!target || !testcases)
@@ -57,12 +20,7 @@ function main(target, testcases){
         console.error('This script must be run in Node.js v6.0.0');
         return 1;
     }
-    let data;
-    if (fs.existsSync(`${target}/data.gz`))
-        data = zlib.gunzipSync(fs.readFileSync(`${target}/data.gz`));
-    else if (fs.existsSync(`${target}/data`))
-        data = fs.readFileSync(`${target}/data`);
-    let context = initialize(`${target}/solution.js`, data);
+    let classifier = loader.load(target);
     let global_score = 0, total = 0;
     for (let file of fs.readdirSync(testcases).sort())
     {
@@ -70,9 +28,7 @@ function main(target, testcases){
         let score = 0;
         for (let word in tc)
         {
-            let correct = tc[word];
-            let res = test(context, word);
-            if (res==correct)
+            if (classifier(word)==tc[word])
             {
                 score++;
                 global_score++;

@@ -6,7 +6,8 @@ const zlib = require('zlib');
 function initialize(filename, data){
     const id = '__hola_xyzzy__';
     let text = fs.readFileSync(filename, 'utf8');
-    let script = new vm.Script(text, {filename: filename});
+    // strip BOM and/or shebang
+    text = text.slice(/^\ufeff?(#![^\r\n]*)?/.exec(text)[0].length);
     let m = {exports: {}};
     let console = Object.create(global.console);
     console.log = console.info = ()=>{}; // silence debug logging
@@ -17,7 +18,9 @@ function initialize(filename, data){
         Buffer,
     });
     context.global = context;
-    script.runInContext(context);
+    vm.runInContext(
+        `(function(exports, module){${text}}).call(exports, exports, module);`,
+        context, {filename});
     if (m.exports.init)
     {
         if (data)

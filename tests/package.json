@@ -1,6 +1,9 @@
 {
     "dependencies": {
         "random-js": "1.0.8",
-        "underscore": "1.8.3"
+        "underscore": "1.8.3",
+        "node-getopt": "0.2.3",
+        "rimraf": "2.5.2",
+        "mkdir-parents": "0.0.2"
     }
 }

@@ -5,7 +5,7 @@ const rimraf = require('rimraf');
 const mkdir_parents = require('mkdir-parents');
 const generator = require('./generator.js');
 const getopt = require('node-getopt').create([
-    ['w', 'words=WORDLIST', 'wordlist location (default: ../words.txt)'],
+    ['w', 'words=WORDLIST', 'alternative wordlist location'],
     ['t', 'text=STRING', 'seed string'],
     ['s', 'start=N', 'starting seed'],
     ['v', 'verbose', 'log names of files written to'],
@@ -46,10 +46,11 @@ function main(){
         return getopt.showHelp();
     if (opt.argv.length!=2)
         return getopt.showHelp();
-    let wordlist = opt.options.words||'../words.txt';
     let n = +opt.argv[0], target = opt.argv[1];
     rimraf.sync(target, {glob: false});
     mkdir_parents.sync(target);
+    let wordlist = opt.options.words||
+        fs.realpathSync(`${__dirname}/../words.txt`);
     if (opt.options.verbose)
         console.log(`Initializing with ${wordlist}`);
     let words = fs.readFileSync(wordlist, 'utf8').slice(0, -1).split('\n');

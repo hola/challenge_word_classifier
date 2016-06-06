@@ -2,14 +2,16 @@
 'use strict'; /*jslint node:true*/
 const random_js = require('random-js');
 const _ = require('underscore');
+const CHARS = 28, TC_SIZE = 100, MAX_DEPTH = 8;
 
 module.exports = {
     init,
     generate,
     sequence,
+    TC_SIZE,
+    MAX_DEPTH,
 };
 
-const CHARS = 28, TC_SIZE = 100, MAX_DEPTH = 8;
 let models, dictionary;
 
 function c2i(c)

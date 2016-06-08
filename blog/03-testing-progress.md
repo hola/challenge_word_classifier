@@ -2,7 +2,7 @@ Sorry to keep you waiting! Alexey Feldgendler here on behalf of Hola, explaining
 
 ## 312 solutions to test
 
-First of all, thanks to everyone who participated! We have received an overwhelming response: 603 submissions from 312 unique participants. Because we only test the latest submission from each participant, we now have 312 solutions to test. I hope this partly explains why it's taking so long.
+First of all, thanks to everyone who participated! We have received an overwhelming response: 603 submissions from 312 unique participants. Because we only test the latest submission from each participant, we now have **312 solutions** to test. I hope this partly explains why it's taking so long.
 
 The solutions are published in the [submissions](../submissions) directory. Each subdirectory is named with the unique ID assigned to the particular submission. Participants received unique IDs for their solutions by e-mail after submitting. Names or pseudonyms of the authors behind the solutions will be published together with the final results.
 

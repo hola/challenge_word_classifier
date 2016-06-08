@@ -1,4 +1,4 @@
-Sorry to keep you waiting! @feldgendler here on behalf of Hola, explaining what's going on.
+Sorry to keep you waiting! Alexey Feldgendler here on behalf of Hola, explaining what's going on.
 
 ## 312 solutions to test
 

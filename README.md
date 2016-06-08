@@ -18,16 +18,16 @@ To make repeated publications more manageable, the monolithic README has been co
 
 Sorry to keep you waiting! An update about what's going on after the deadline.
 
-*Published on June 8, 2016*
+*Published on June 8, 2016 ([Russian version](https://habrahabr.ru/company/hola/blog/302922/))*
 
 ## [FAQ](blog/02-faq.md)
 
 Publishing the reference test program, answering frequently asked questions, describing the most common mistakes.
 
-*Published on May 20, 2016*
+*Published on May 20, 2016 ([Russian version](https://habrahabr.ru/company/hola/blog/301314/))*
 
 ## [Rules](blog/01-rules.md)
 
 Problem statement, API for solutions, submission guidelines.
 
-*Published on April 27, 2016*
+*Published on April 27, 2016 ([Russian version](https://habrahabr.ru/company/hola/blog/282624/))*

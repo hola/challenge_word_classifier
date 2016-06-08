@@ -1,5 +1,7 @@
 Sorry to keep you waiting! Alexey Feldgendler here on behalf of Hola, explaining what's going on.
 
+See also the [Russian version](https://habrahabr.ru/company/hola/blog/302922/) of this page.
+
 ## 312 solutions to test
 
 First of all, thanks to everyone who participated! We have received an overwhelming response: 603 submissions from 312 unique participants. Because we only test the latest submission from each participant, we now have **312 solutions** to test. I hope this partly explains why it's taking so long.

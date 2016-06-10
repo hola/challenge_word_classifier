@@ -33,10 +33,9 @@ function i2c(i)
 }
 
 class MarkovModel {
-    constructor(order, prev){
+    constructor(order){
         this.order = order;
         this.data = new Map();
-        this.prev = prev;
     }
     learn(word){
         for (let i = 0; i<=word.length; i++)
@@ -54,8 +53,6 @@ class MarkovModel {
     }
     produce(random, prefix){
         let item = this.data.get(prefix.slice(-this.order));
-        if (!item)
-            return this.prev(prefix);
         let n = random.integer(0, item[0]-1);
         for (let i = 1; i<=CHARS; i++)
         {
@@ -95,7 +92,7 @@ class LengthModel {
 function init(words){
     models = [new LengthModel()];
     for (let i = 1; i<=MAX_DEPTH; i++)
-        models.push(new MarkovModel(i, models[i-1]));
+        models.push(new MarkovModel(i));
     dictionary = words.map(w=>w.toLowerCase()).sort();
     for (let word of dictionary)
     {

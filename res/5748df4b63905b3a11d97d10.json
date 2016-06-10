@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/5748df4b63905b3a11d97d10",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "Error: data supplied but no init function"
+        }
+    },
+    {
+        "solution": "submissions/5748df4b63905b3a11d97d10",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "Error: data supplied but no init function"
+        }
+    }
+]

@@ -1,0 +1,378 @@
+[
+    {
+        "solution": "submissions/5747f68063905b3a11d97c48",
+        "restart": false,
+        "intermediate": [
+            {
+                "total": {
+                    "right": 7814,
+                    "wrong": 2186,
+                    "total": 10000,
+                    "right_rate": 78.14,
+                    "wrong_rate": 21.86
+                },
+                "words": {
+                    "right": 4781,
+                    "wrong": 242,
+                    "total": 5023,
+                    "right_rate": 95.18216205454908,
+                    "wrong_rate": 4.8178379454509255
+                },
+                "nonwords": {
+                    "right": 3033,
+                    "wrong": 1944,
+                    "total": 4977,
+                    "right_rate": 60.940325497287525,
+                    "wrong_rate": 39.059674502712475
+                },
+                "nonwords_by_model": [
+                    {
+                        "right": 895,
+                        "wrong": 45,
+                        "total": 940,
+                        "right_rate": 95.2127659574468,
+                        "wrong_rate": 4.787234042553192
+                    },
+                    {
+                        "right": 465,
+                        "wrong": 222,
+                        "total": 687,
+                        "right_rate": 67.68558951965065,
+                        "wrong_rate": 32.314410480349345
+                    },
+                    {
+                        "right": 428,
+                        "wrong": 307,
+                        "total": 735,
+                        "right_rate": 58.2312925170068,
+                        "wrong_rate": 41.7687074829932
+                    },
+                    {
+                        "right": 404,
+                        "wrong": 362,
+                        "total": 766,
+                        "right_rate": 52.74151436031332,
+                        "wrong_rate": 47.25848563968668
+                    },
+                    {
+                        "right": 386,
+                        "wrong": 388,
+                        "total": 774,
+                        "right_rate": 49.87080103359173,
+                        "wrong_rate": 50.12919896640827
+                    },
+                    {
+                        "right": 239,
+                        "wrong": 332,
+                        "total": 571,
+                        "right_rate": 41.85639229422067,
+                        "wrong_rate": 58.14360770577933
+                    },
+                    {
+                        "right": 128,
+                        "wrong": 169,
+                        "total": 297,
+                        "right_rate": 43.0976430976431,
+                        "wrong_rate": 56.9023569023569
+                    },
+                    {
+                        "right": 59,
+                        "wrong": 79,
+                        "total": 138,
+                        "right_rate": 42.7536231884058,
+                        "wrong_rate": 57.2463768115942
+                    },
+                    {
+                        "right": 29,
+                        "wrong": 40,
+                        "total": 69,
+                        "right_rate": 42.028985507246375,
+                        "wrong_rate": 57.971014492753625
+                    }
+                ],
+                "speed": 515.49
+            },
+            {
+                "total": {
+                    "right": 15616,
+                    "wrong": 4384,
+                    "total": 20000,
+                    "right_rate": 78.08,
+                    "wrong_rate": 21.92
+                },
+                "words": {
+                    "right": 9567,
+                    "wrong": 475,
+                    "total": 10042,
+                    "right_rate": 95.26986656044613,
+                    "wrong_rate": 4.730133439553874
+                },
+                "nonwords": {
+                    "right": 6049,
+                    "wrong": 3909,
+                    "total": 9958,
+                    "right_rate": 60.74512954408516,
+                    "wrong_rate": 39.25487045591484
+                },
+                "nonwords_by_model": [
+                    {
+                        "right": 1746,
+                        "wrong": 73,
+                        "total": 1819,
+                        "right_rate": 95.9868059373282,
+                        "wrong_rate": 4.013194062671798
+                    },
+                    {
+                        "right": 958,
+                        "wrong": 470,
+                        "total": 1428,
+                        "right_rate": 67.08683473389357,
+                        "wrong_rate": 32.91316526610644
+                    },
+                    {
+                        "right": 826,
+                        "wrong": 619,
+                        "total": 1445,
+                        "right_rate": 57.16262975778547,
+                        "wrong_rate": 42.83737024221453
+                    },
+                    {
+                        "right": 816,
+                        "wrong": 767,
+                        "total": 1583,
+                        "right_rate": 51.547694251421355,
+                        "wrong_rate": 48.452305748578645
+                    },
+                    {
+                        "right": 788,
+                        "wrong": 733,
+                        "total": 1521,
+                        "right_rate": 51.80802103879027,
+                        "wrong_rate": 48.19197896120973
+                    },
+                    {
+                        "right": 483,
+                        "wrong": 647,
+                        "total": 1130,
+                        "right_rate": 42.743362831858406,
+                        "wrong_rate": 57.256637168141594
+                    },
+                    {
+                        "right": 260,
+                        "wrong": 342,
+                        "total": 602,
+                        "right_rate": 43.18936877076412,
+                        "wrong_rate": 56.81063122923588
+                    },
+                    {
+                        "right": 114,
+                        "wrong": 174,
+                        "total": 288,
+                        "right_rate": 39.583333333333336,
+                        "wrong_rate": 60.416666666666664
+                    },
+                    {
+                        "right": 58,
+                        "wrong": 84,
+                        "total": 142,
+                        "right_rate": 40.84507042253521,
+                        "wrong_rate": 59.15492957746479
+                    }
+                ],
+                "speed": 542.91
+            }
+        ],
+        "final": {
+            "dead": "SIGTERM"
+        }
+    },
+    {
+        "solution": "submissions/5747f68063905b3a11d97c48",
+        "restart": true,
+        "intermediate": [
+            {
+                "total": {
+                    "right": 7814,
+                    "wrong": 2186,
+                    "total": 10000,
+                    "right_rate": 78.14,
+                    "wrong_rate": 21.86
+                },
+                "words": {
+                    "right": 4781,
+                    "wrong": 242,
+                    "total": 5023,
+                    "right_rate": 95.18216205454908,
+                    "wrong_rate": 4.8178379454509255
+                },
+                "nonwords": {
+                    "right": 3033,
+                    "wrong": 1944,
+                    "total": 4977,
+                    "right_rate": 60.940325497287525,
+                    "wrong_rate": 39.059674502712475
+                },
+                "nonwords_by_model": [
+                    {
+                        "right": 895,
+                        "wrong": 45,
+                        "total": 940,
+                        "right_rate": 95.2127659574468,
+                        "wrong_rate": 4.787234042553192
+                    },
+                    {
+                        "right": 465,
+                        "wrong": 222,
+                        "total": 687,
+                        "right_rate": 67.68558951965065,
+                        "wrong_rate": 32.314410480349345
+                    },
+                    {
+                        "right": 428,
+                        "wrong": 307,
+                        "total": 735,
+                        "right_rate": 58.2312925170068,
+                        "wrong_rate": 41.7687074829932
+                    },
+                    {
+                        "right": 404,
+                        "wrong": 362,
+                        "total": 766,
+                        "right_rate": 52.74151436031332,
+                        "wrong_rate": 47.25848563968668
+                    },
+                    {
+                        "right": 386,
+                        "wrong": 388,
+                        "total": 774,
+                        "right_rate": 49.87080103359173,
+                        "wrong_rate": 50.12919896640827
+                    },
+                    {
+                        "right": 239,
+                        "wrong": 332,
+                        "total": 571,
+                        "right_rate": 41.85639229422067,
+                        "wrong_rate": 58.14360770577933
+                    },
+                    {
+                        "right": 128,
+                        "wrong": 169,
+                        "total": 297,
+                        "right_rate": 43.0976430976431,
+                        "wrong_rate": 56.9023569023569
+                    },
+                    {
+                        "right": 59,
+                        "wrong": 79,
+                        "total": 138,
+                        "right_rate": 42.7536231884058,
+                        "wrong_rate": 57.2463768115942
+                    },
+                    {
+                        "right": 29,
+                        "wrong": 40,
+                        "total": 69,
+                        "right_rate": 42.028985507246375,
+                        "wrong_rate": 57.971014492753625
+                    }
+                ],
+                "speed": 523.06,
+                "restarts": 5
+            },
+            {
+                "total": {
+                    "right": 15616,
+                    "wrong": 4384,
+                    "total": 20000,
+                    "right_rate": 78.08,
+                    "wrong_rate": 21.92
+                },
+                "words": {
+                    "right": 9567,
+                    "wrong": 475,
+                    "total": 10042,
+                    "right_rate": 95.26986656044613,
+                    "wrong_rate": 4.730133439553874
+                },
+                "nonwords": {
+                    "right": 6049,
+                    "wrong": 3909,
+                    "total": 9958,
+                    "right_rate": 60.74512954408516,
+                    "wrong_rate": 39.25487045591484
+                },
+                "nonwords_by_model": [
+                    {
+                        "right": 1746,
+                        "wrong": 73,
+                        "total": 1819,
+                        "right_rate": 95.9868059373282,
+                        "wrong_rate": 4.013194062671798
+                    },
+                    {
+                        "right": 958,
+                        "wrong": 470,
+                        "total": 1428,
+                        "right_rate": 67.08683473389357,
+                        "wrong_rate": 32.91316526610644
+                    },
+                    {
+                        "right": 826,
+                        "wrong": 619,
+                        "total": 1445,
+                        "right_rate": 57.16262975778547,
+                        "wrong_rate": 42.83737024221453
+                    },
+                    {
+                        "right": 816,
+                        "wrong": 767,
+                        "total": 1583,
+                        "right_rate": 51.547694251421355,
+                        "wrong_rate": 48.452305748578645
+                    },
+                    {
+                        "right": 788,
+                        "wrong": 733,
+                        "total": 1521,
+                        "right_rate": 51.80802103879027,
+                        "wrong_rate": 48.19197896120973
+                    },
+                    {
+                        "right": 483,
+                        "wrong": 647,
+                        "total": 1130,
+                        "right_rate": 42.743362831858406,
+                        "wrong_rate": 57.256637168141594
+                    },
+                    {
+                        "right": 260,
+                        "wrong": 342,
+                        "total": 602,
+                        "right_rate": 43.18936877076412,
+                        "wrong_rate": 56.81063122923588
+                    },
+                    {
+                        "right": 114,
+                        "wrong": 174,
+                        "total": 288,
+                        "right_rate": 39.583333333333336,
+                        "wrong_rate": 60.416666666666664
+                    },
+                    {
+                        "right": 58,
+                        "wrong": 84,
+                        "total": 142,
+                        "right_rate": 40.84507042253521,
+                        "wrong_rate": 59.15492957746479
+                    }
+                ],
+                "speed": 546.15,
+                "restarts": 12
+            }
+        ],
+        "final": {
+            "dead": "disconnect"
+        }
+    }
+]

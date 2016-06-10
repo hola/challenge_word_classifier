@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/5748dabd63905b3a11d97cfa",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "ReferenceError: GLOBAL is not defined"
+        }
+    },
+    {
+        "solution": "submissions/5748dabd63905b3a11d97cfa",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "ReferenceError: GLOBAL is not defined"
+        }
+    }
+]

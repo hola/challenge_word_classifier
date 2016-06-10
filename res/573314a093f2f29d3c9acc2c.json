@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/573314a093f2f29d3c9acc2c",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'end' of undefined"
+        }
+    },
+    {
+        "solution": "submissions/573314a093f2f29d3c9acc2c",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'end' of undefined"
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/5721417f93f2f29d3c9acbba",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'toString' of undefined"
+        }
+    },
+    {
+        "solution": "submissions/5721417f93f2f29d3c9acbba",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'toString' of undefined"
+        }
+    }
+]

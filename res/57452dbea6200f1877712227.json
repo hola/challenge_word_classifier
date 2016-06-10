@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/57452dbea6200f1877712227",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "ReferenceError: fs is not defined"
+        }
+    },
+    {
+        "solution": "submissions/57452dbea6200f1877712227",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "ReferenceError: fs is not defined"
+        }
+    }
+]

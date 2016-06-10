@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/57245a1f93f2f29d3c9acbf0",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'split' of undefined"
+        }
+    },
+    {
+        "solution": "submissions/57245a1f93f2f29d3c9acbf0",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'split' of undefined"
+        }
+    }
+]

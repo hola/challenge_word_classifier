@@ -1,0 +1,199 @@
+[
+    {
+        "solution": "submissions/57274d4b93f2f29d3c9acc03",
+        "restart": false,
+        "intermediate": [
+            {
+                "total": {
+                    "right": 5929,
+                    "wrong": 4071,
+                    "total": 10000,
+                    "right_rate": 59.29,
+                    "wrong_rate": 40.71
+                },
+                "words": {
+                    "right": 5023,
+                    "wrong": 0,
+                    "total": 5023,
+                    "right_rate": 100,
+                    "wrong_rate": 0
+                },
+                "nonwords": {
+                    "right": 906,
+                    "wrong": 4071,
+                    "total": 4977,
+                    "right_rate": 18.203737191078957,
+                    "wrong_rate": 81.79626280892104
+                },
+                "nonwords_by_model": [
+                    {
+                        "right": 820,
+                        "wrong": 120,
+                        "total": 940,
+                        "right_rate": 87.23404255319149,
+                        "wrong_rate": 12.76595744680851
+                    },
+                    {
+                        "right": 66,
+                        "wrong": 621,
+                        "total": 687,
+                        "right_rate": 9.606986899563324,
+                        "wrong_rate": 90.39301310043668
+                    },
+                    {
+                        "right": 15,
+                        "wrong": 720,
+                        "total": 735,
+                        "right_rate": 2.040816326530617,
+                        "wrong_rate": 97.95918367346938
+                    },
+                    {
+                        "right": 5,
+                        "wrong": 761,
+                        "total": 766,
+                        "right_rate": 0.652741514360315,
+                        "wrong_rate": 99.34725848563968
+                    },
+                    {
+                        "right": 0,
+                        "wrong": 774,
+                        "total": 774,
+                        "right_rate": 0,
+                        "wrong_rate": 100
+                    },
+                    {
+                        "right": 0,
+                        "wrong": 571,
+                        "total": 571,
+                        "right_rate": 0,
+                        "wrong_rate": 100
+                    },
+                    {
+                        "right": 0,
+                        "wrong": 297,
+                        "total": 297,
+                        "right_rate": 0,
+                        "wrong_rate": 100
+                    },
+                    {
+                        "right": 0,
+                        "wrong": 138,
+                        "total": 138,
+                        "right_rate": 0,
+                        "wrong_rate": 100
+                    },
+                    {
+                        "right": 0,
+                        "wrong": 69,
+                        "total": 69,
+                        "right_rate": 0,
+                        "wrong_rate": 100
+                    }
+                ],
+                "speed": 20.92
+            }
+        ],
+        "final": {
+            "dead": "TypeError: Cannot read property 'forEach' of null"
+        }
+    },
+    {
+        "solution": "submissions/57274d4b93f2f29d3c9acc03",
+        "restart": true,
+        "intermediate": [
+            {
+                "total": {
+                    "right": 5929,
+                    "wrong": 4071,
+                    "total": 10000,
+                    "right_rate": 59.29,
+                    "wrong_rate": 40.71
+                },
+                "words": {
+                    "right": 5023,
+                    "wrong": 0,
+                    "total": 5023,
+                    "right_rate": 100,
+                    "wrong_rate": 0
+                },
+                "nonwords": {
+                    "right": 906,
+                    "wrong": 4071,
+                    "total": 4977,
+                    "right_rate": 18.203737191078957,
+                    "wrong_rate": 81.79626280892104
+                },
+                "nonwords_by_model": [
+                    {
+                        "right": 820,
+                        "wrong": 120,
+                        "total": 940,
+                        "right_rate": 87.23404255319149,
+                        "wrong_rate": 12.76595744680851
+                    },
+                    {
+                        "right": 66,
+                        "wrong": 621,
+                        "total": 687,
+                        "right_rate": 9.606986899563324,
+                        "wrong_rate": 90.39301310043668
+                    },
+                    {
+                        "right": 15,
+                        "wrong": 720,
+                        "total": 735,
+                        "right_rate": 2.040816326530617,
+                        "wrong_rate": 97.95918367346938
+                    },
+                    {
+                        "right": 5,
+                        "wrong": 761,
+                        "total": 766,
+                        "right_rate": 0.652741514360315,
+                        "wrong_rate": 99.34725848563968
+                    },
+                    {
+                        "right": 0,
+                        "wrong": 774,
+                        "total": 774,
+                        "right_rate": 0,
+                        "wrong_rate": 100
+                    },
+                    {
+                        "right": 0,
+                        "wrong": 571,
+                        "total": 571,
+                        "right_rate": 0,
+                        "wrong_rate": 100
+                    },
+                    {
+                        "right": 0,
+                        "wrong": 297,
+                        "total": 297,
+                        "right_rate": 0,
+                        "wrong_rate": 100
+                    },
+                    {
+                        "right": 0,
+                        "wrong": 138,
+                        "total": 138,
+                        "right_rate": 0,
+                        "wrong_rate": 100
+                    },
+                    {
+                        "right": 0,
+                        "wrong": 69,
+                        "total": 69,
+                        "right_rate": 0,
+                        "wrong_rate": 100
+                    }
+                ],
+                "speed": 22.15,
+                "restarts": 5
+            }
+        ],
+        "final": {
+            "dead": "TypeError: Cannot read property 'forEach' of null"
+        }
+    }
+]

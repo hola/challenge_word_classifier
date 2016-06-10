@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/57489d8d63905b3a11d97c92",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'readInt32LE' of undefined"
+        }
+    },
+    {
+        "solution": "submissions/57489d8d63905b3a11d97c92",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'readInt32LE' of undefined"
+        }
+    }
+]

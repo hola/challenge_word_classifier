@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/5748c3aa63905b3a11d97cd4",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "ReferenceError: window is not defined"
+        }
+    },
+    {
+        "solution": "submissions/5748c3aa63905b3a11d97cd4",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "ReferenceError: window is not defined"
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/5748de7e63905b3a11d97d0b",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "ReferenceError: word is not defined"
+        }
+    },
+    {
+        "solution": "submissions/5748de7e63905b3a11d97d0b",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "ReferenceError: word is not defined"
+        }
+    }
+]

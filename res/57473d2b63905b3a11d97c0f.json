@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/57473d2b63905b3a11d97c0f",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "SyntaxError: Unexpected identifier"
+        }
+    },
+    {
+        "solution": "submissions/57473d2b63905b3a11d97c0f",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "SyntaxError: Unexpected identifier"
+        }
+    }
+]

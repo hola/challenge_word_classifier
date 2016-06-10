@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/574829f263905b3a11d97c55",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "ReferenceError: require is not defined"
+        }
+    },
+    {
+        "solution": "submissions/574829f263905b3a11d97c55",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "ReferenceError: require is not defined"
+        }
+    }
+]

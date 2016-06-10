@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/5748354d63905b3a11d97c59",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "SIGTERM"
+        }
+    },
+    {
+        "solution": "submissions/5748354d63905b3a11d97c59",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "SIGTERM"
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/5721eb2c93f2f29d3c9acbd0",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: data.split is not a function"
+        }
+    },
+    {
+        "solution": "submissions/5721eb2c93f2f29d3c9acbd0",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: data.split is not a function"
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/572246fb93f2f29d3c9acbda",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "Error: incorrect header check"
+        }
+    },
+    {
+        "solution": "submissions/572246fb93f2f29d3c9acbda",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "Error: incorrect header check"
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/5721cf9d93f2f29d3c9acbc9",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: module.exports.test is not a function"
+        }
+    },
+    {
+        "solution": "submissions/5721cf9d93f2f29d3c9acbc9",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: module.exports.test is not a function"
+        }
+    }
+]

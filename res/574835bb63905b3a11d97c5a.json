@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/574835bb63905b3a11d97c5a",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'length' of null"
+        }
+    },
+    {
+        "solution": "submissions/574835bb63905b3a11d97c5a",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'length' of null"
+        }
+    }
+]

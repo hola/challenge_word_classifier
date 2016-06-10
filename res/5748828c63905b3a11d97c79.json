@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/5748828c63905b3a11d97c79",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'a' of undefined"
+        }
+    },
+    {
+        "solution": "submissions/5748828c63905b3a11d97c79",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'a' of undefined"
+        }
+    }
+]

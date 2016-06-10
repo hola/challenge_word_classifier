@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/5748aef563905b3a11d97cad",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'endWord' of undefined"
+        }
+    },
+    {
+        "solution": "submissions/5748aef563905b3a11d97cad",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'endWord' of undefined"
+        }
+    }
+]

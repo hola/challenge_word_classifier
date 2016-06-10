@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/5748dc4e63905b3a11d97d01",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: word is not a function"
+        }
+    },
+    {
+        "solution": "submissions/5748dc4e63905b3a11d97d01",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: word is not a function"
+        }
+    }
+]

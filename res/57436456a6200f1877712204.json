@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/57436456a6200f1877712204",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: w2_data.split is not a function"
+        }
+    },
+    {
+        "solution": "submissions/57436456a6200f1877712204",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: w2_data.split is not a function"
+        }
+    }
+]

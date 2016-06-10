@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/5727ac2593f2f29d3c9acc07",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "ReferenceError: process is not defined"
+        }
+    },
+    {
+        "solution": "submissions/5727ac2593f2f29d3c9acc07",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "ReferenceError: process is not defined"
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/57335b62a6200f1877712191",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'getIsFirst' of null"
+        }
+    },
+    {
+        "solution": "submissions/57335b62a6200f1877712191",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "TypeError: Cannot read property 'getIsFirst' of null"
+        }
+    }
+]

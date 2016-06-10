@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/573c53cfa6200f18777121b2",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "SyntaxError: Unexpected token export"
+        }
+    },
+    {
+        "solution": "submissions/573c53cfa6200f18777121b2",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "SyntaxError: Unexpected token export"
+        }
+    }
+]

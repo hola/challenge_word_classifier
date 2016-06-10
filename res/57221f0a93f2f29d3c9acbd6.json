@@ -1,0 +1,18 @@
+[
+    {
+        "solution": "submissions/57221f0a93f2f29d3c9acbd6",
+        "restart": false,
+        "intermediate": [],
+        "final": {
+            "dead": "SyntaxError: Unexpected token {"
+        }
+    },
+    {
+        "solution": "submissions/57221f0a93f2f29d3c9acbd6",
+        "restart": true,
+        "intermediate": [],
+        "final": {
+            "dead": "SyntaxError: Unexpected token {"
+        }
+    }
+]

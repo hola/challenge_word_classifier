@@ -1,3 +1,5 @@
+*[Main page](../)* | *[Previous post](01-rules.md)* | *[Next post](03-testing-progress.md)*
+
 A few updates to the ongoing Word Classifier challenge.
 
 For your convenience, we are publishing the test program that we are going to use to test your solution: [tests/test.js](../tests/test.js). Run it without arguments to see the usage text.

@@ -1,3 +1,5 @@
+*[Main page](../)* | *[Previous post](02-faq.md)*
+
 Sorry to keep you waiting! Alexey Feldgendler here on behalf of Hola, explaining what's going on.
 
 See also the [Russian version](https://habrahabr.ru/company/hola/blog/302922/) of this page.

@@ -1,3 +1,5 @@
+*[Main page](../)* | *[Next post](02-faq.md)*
+
 Welcome to Hola programming challenge! The prizes are record-high:
 
 1. First prize: 3000 USD.

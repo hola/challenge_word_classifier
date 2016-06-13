@@ -19,7 +19,7 @@ To make repeated publications more manageable, the monolithic README has been co
 
 Publishing the testing results, including raw data from the test system.
 
-*Published on June 13, 2016*
+*Published on June 13, 2016 ([Russian version](https://habrahabr.ru/company/hola/blog/303178/))*
 
 ## [Testing progress](blog/03-testing-progress.md)
 

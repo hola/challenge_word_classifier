@@ -7,12 +7,19 @@ Welcome to Hola programming challenge! Here is the current status:
 - [x] Stop accepting submissions at the deadline
 - [x] Publish all solutions
 - [x] Publish complete test harness
-- [ ] Test all solutions
-- [ ] Publish preliminary results
+- [x] Test all solutions
+- [x] Publish preliminary results
+- [ ] Publish a comparison of learning solutions
 - [ ] If necessary, make corrections after public discussion
 - [ ] Publish final results and award the winners
 
 To make repeated publications more manageable, the monolithic README has been converted to a blog-like collection of documents.
+
+## [Preliminary standings](blog/04-preliminary-standings.md)
+
+Publishing the testing results, including raw data from the test system.
+
+*Published on June 13, 2016*
 
 ## [Testing progress](blog/03-testing-progress.md)
 

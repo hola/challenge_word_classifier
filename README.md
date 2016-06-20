@@ -9,9 +9,8 @@ Welcome to Hola programming challenge! Here is the current status:
 - [x] Publish complete test harness
 - [x] Test all solutions
 - [x] Publish preliminary results
+- [x] Publish final results and award the winners
 - [ ] Publish a comparison of learning solutions
-- [ ] If necessary, make corrections after public discussion
-- [ ] Publish final results and award the winners
 
 To make repeated publications more manageable, the monolithic README has been converted to a blog-like collection of documents.
 

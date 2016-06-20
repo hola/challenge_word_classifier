@@ -2,6 +2,8 @@
 
 As promised, here are the final standings, with participants' names instead of submission IDs. Congratulations to the winners!
 
+See also the [Russian version](https://habrahabr.ru/company/hola/blog/303660/) of this page.
+
 The jury is still out on who is going to receive the special prizes. Stay tuned for our follow-up post about the solutions that learn.
 
 ## Final standings

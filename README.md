@@ -18,7 +18,7 @@ To make repeated publications more manageable, the monolithic README has been co
 
 Final standings. Congratulations to the winners!
 
-*Pubished on June 20, 2016*
+*Pubished on June 20, 2016 ([Russian version](https://habrahabr.ru/company/hola/blog/303660/))*
 
 ## [Preliminary standings](blog/04-preliminary-standings.md)
 

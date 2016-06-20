@@ -14,7 +14,7 @@ Welcome to Hola programming challenge! Here is the current status:
 
 To make repeated publications more manageable, the monolithic README has been converted to a blog-like collection of documents.
 
-## [Final standings](blog/05-preliminary-standings.md)
+## [Final standings](blog/05-final-standings.md)
 
 Final standings. Congratulations to the winners!
 

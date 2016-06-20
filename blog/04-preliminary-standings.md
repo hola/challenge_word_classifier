@@ -1,4 +1,4 @@
-*[Main page](../)* | *[Previous post](03-testing-progress.md)*
+*[Main page](../)* | *[Previous post](04-testing-progress.md)* | *[Next post](05-final-standings.md)*
 
 Sorry for the delay! We are done testing the participants' solutions, presenting preliminary results below. Why are these “preliminary”? Because we can be wrong. We hope not, but if someone can point out how our results are incorrect, there's still time to revisit them. Comments are welcome!
 
@@ -42,7 +42,7 @@ Legend:
 * **F–**: rate of false negatives
 * **F+**: rate of false positives
 * **F+<sub>0</sub>**…**F+<sub>8</sub>**: rate of false positives among words generated from a particular model
-* *hc*: submissions *hors concours* (off-context)
+* *hc*: submissions *hors concours* (off-contest)
 
 Solutions that haven't been assigned a rank in the leftmost column of this table, were evaluated off-contest for several reasons, such as having been submitted by Hola employees or requiring a fix to run (author forgot the “gzip” checkbox when submitting).
 

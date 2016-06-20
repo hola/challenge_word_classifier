@@ -2,14 +2,14 @@
 
 Welcome to Hola programming challenge! Here is the current status:
 
-- [x] Publish problem statement, start accepting submissions
-- [x] Publish reference test program, FAQ, typical mistakes
+- [x] Publish [problem statement](blog/01-rules.md), start accepting submissions
+- [x] Publish [reference test program](tests/test.js), [FAQ, typical mistakes](blog/02-faq.md)
 - [x] Stop accepting submissions at the deadline
-- [x] Publish all solutions
-- [x] Publish complete test harness
+- [x] Publish [all solutions](submissions)
+- [x] Publish [complete test harness](blog/03-testing-progress.md#testcase-generator)
 - [x] Test all solutions
-- [x] Publish preliminary results
-- [x] Publish final results and award the winners
+- [x] Publish [preliminary results](blog/04-preliminary-standings.md)
+- [x] Publish [final results](blog/05-final-standings.md) and award the winners
 - [ ] Publish a comparison of learning solutions
 
 To make repeated publications more manageable, the monolithic README has been converted to a blog-like collection of documents.

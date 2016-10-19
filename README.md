@@ -10,7 +10,7 @@ Welcome to Hola programming challenge! Here is the current status:
 - [x] Test all solutions
 - [x] Publish [preliminary results](blog/04-preliminary-standings.md)
 - [x] Publish [final results](blog/05-final-standings.md) and award the winners
-- [x] Publish a comparison of learning solutions and award the special prizes
+- [x] Publish a [comparison of learning solutions](blog/06-learning-solutions.md) and award the special prizes
 
 To make repeated publications more manageable, the monolithic README has been converted to a blog-like collection of documents.
 

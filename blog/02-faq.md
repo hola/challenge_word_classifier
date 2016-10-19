@@ -1,4 +1,4 @@
-*[Main page](../)* | *[Previous post](01-rules.md)* | *[Next post](03-testing-progress.md)*
+*[Previous post](01-rules.md)* | *[Next post](03-testing-progress.md)*
 
 A few updates to the ongoing Word Classifier challenge.
 

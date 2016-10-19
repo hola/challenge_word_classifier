@@ -1,4 +1,4 @@
-*[Main page](../)* | *[Previous post](02-faq.md)* | *[Next post](04-preliminary-standings.md)*
+*[Previous post](02-faq.md)* | *[Next post](04-preliminary-standings.md)*
 
 Sorry to keep you waiting! Alexey Feldgendler here on behalf of Hola, explaining what's going on.
 

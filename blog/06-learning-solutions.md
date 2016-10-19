@@ -1,4 +1,4 @@
-*[Main page](../)* | *[Previous post](05-final-standings.md)*
+*[Previous post](05-final-standings.md)*
 
 We promised to publish an analysis of the solutions that learn from the inputs given to them. We are terribly sorry for the delay.
 

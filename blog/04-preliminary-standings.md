@@ -1,4 +1,4 @@
-*[Main page](../)* | *[Previous post](04-testing-progress.md)* | *[Next post](05-final-standings.md)*
+*[Previous post](04-testing-progress.md)* | *[Next post](05-final-standings.md)*
 
 Sorry for the delay! We are done testing the participants' solutions, presenting preliminary results below. Why are these “preliminary”? Because we can be wrong. We hope not, but if someone can point out how our results are incorrect, there's still time to revisit them. Comments are welcome!
 

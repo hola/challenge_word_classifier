@@ -2,8 +2,6 @@
 
 We promised to publish an analysis of the solutions that learn from the inputs given to them. We are terribly sorry for the delay.
 
-This post also announces the winners of the special prizes.
-
 ## Learning solutions
 
 We found 9 submissions to exhibit self-learning behavior. That is, their correctness rate improves as they are being continuously tested.
@@ -190,13 +188,3 @@ The following two graphs show how the false negative and false positive rates ch
 Interestingly, some of the solutions become worse after an initial period of improvement. The graph of false positives provides a likely explanation: because nonwords are generated randomly, they, too, can appear repeatedly (especially if they are short), albeit it happens much less freuqntly than with words. This leads to the accumulation of certain nonwords that the solution mistakes for words. Depending on the details of the learning algorithm, some solutions are more prone to this effect than others, and some seem to be completely immune to it.
 
 The raw results of the run on 1,000,000 blocks are available as a [JSON file](../res-learning/1m.json).
-
-### Special prizes
-
-We had declared that we would award two special prizes, and we decided to hand them to the authors of the best learning solutions. There wasn't an official criterion for what counts as “best”, so here is our rationale.
-
-One **400 USD** special prize goes to **rd.nvkz**, whose solution achieved the highest correctness rate we have seen, 93.99%. The learning potential of this solution is impressive: it kept improving long after the marginal correctness rates of most other solutions started to get worse. This was also the only solution that survived testing on 1,000,000 blocks without crashing.
-
-Another **400 USD** special prize goes to **Balzac** for the best combination of the learning and non-learning parts. The baseline (non-learning) result of 80.72% is the best of all learning solutions, and it would rank 14th in the main results if learning were forbidden for everybody. However, learning put this solution 6th in the main standings with 10,000 blocks. This is also the second most robust solution which did not crash until after having processed 900,000 blocks, for an impressive final correctness rate of 89.03%.
-
-Congratulations to the winners of the special awards!

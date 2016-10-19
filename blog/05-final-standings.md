@@ -1,4 +1,4 @@
-*[Main page](../)* | *[Previous post](04-preliminary-standings.md)*
+*[Main page](../)* | *[Previous post](04-preliminary-standings.md)* | *[Next post](06-learning-solutions.md)*
 
 As promised, here are the final standings, with participants' names instead of submission IDs. Congratulations to the winners!
 

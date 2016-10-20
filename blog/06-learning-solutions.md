@@ -2,6 +2,8 @@
 
 We promised to publish an analysis of the solutions that learn from the inputs given to them. We are terribly sorry for the delay.
 
+This post also announces the winners of the special prizes.
+
 ## Learning solutions
 
 We found 9 submissions to exhibit self-learning behavior. That is, their correctness rate improves as they are being continuously tested.
@@ -155,21 +157,21 @@ The raw results of the run on 10,000 blocks with restarts are available as a [JS
 
 It takes way more than 10,000 blocks for most dictionary words to appear at least twice each. To explore the learning potential fully, we used a much larger set: 1,000,000 blocks. (Arguably, we should have used it to test all submissions in the first place, but because many of the submissions weren't optimized for performance, it would have taken us months.) This larger dataset is an extension of the official testcase sequence, so the first 10,000 blocks are the same as in the main set.
 
-When tested on such a large set, most solutions ran out of memory and crashed sooner or later. Only one survived for the entire 1,000,000 blocks. The table below summarizes each solution's final achievement before it crashed. For performance reasons, our test system was configured to dump intermediate results only every 10,000 blocks, so the actual achievements are probably slightly better. The table below is ordered by the best achieved correctness rate.
+When tested on such a large set, 4 of the 9 solutions ran out of memory and crashed. The table below summarizes each solution's final achievement; for those that crashed, the last achievement before the crash is shown. For performance reasons, our test system was configured to dump intermediate results only every 10,000 blocks, so the actual achievements by the crashing solutions are probably slightly better. The table below is ordered by the last achieved correctness rate.
 
-We discovered that Node.js behaves in a nondeterministic manner even on identical programs with identical inputs. This causes the same solution to crash at different times when the entire set of tests is run repeatedly. However, in each of our several experiments, all solutions but one had crashed at some point. Below are the results of one such experiment; your results might be slightly different.
+We discovered that Node.js behaves in a nondeterministic manner even on identical programs with identical inputs. This causes the same solution to crash at different times when the entire set of tests is run repeatedly. Below are the results of one such experiment; your results might be slightly different.
 
 | # | ID | Blocks | Correct | F- | F+ |
 |---|----|--------|---------|----|----|
 | 1 | [rd.nvkz](../submissions/5747c9f463905b3a11d97c3a) | 1,000,000 | 93.99% | 4.12% | 7.90% |
-| 2 | [AndSDev](../submissions/57461bcb63905b3a11d97be7) | 680,000 | 93.43% | 4.61% | 8.53% |
-| 3 | [Konstantin Akimov](../submissions/57484a0663905b3a11d97c62) | 100,000 | 89.90% | 12.10% | 8.09% |
-| 4 | [Balzac](../submissions/5748dc5763905b3a11d97d02) | 900,000 | 89.03% | 1.84% | 20.11% |
-| 5 | [Aleksandr Plesovskikh](../submissions/57407f40a6200f18777121d1) | 190,000 | 87.13% | 6.63% | 19.12% |
-| 6 | [Zavtramen](../submissions/5748c99463905b3a11d97cdb) | 110,000 | 84.87% | 3.33% | 26.93% |
-| 7 | [Anton Bulychev](../submissions/5748cffe63905b3a11d97ce5) | 670,000 | 84.25% | 6.14% | 25.37% |
-| 8 | [Ihor Brazhnichenko](../submissions/57488d9763905b3a11d97c80) | 160,000 | 82.30% | 2.52% | 32.90% |
-| 9 | [Vladimir Prihojenko](../submissions/5748d90363905b3a11d97cf5) | 170,000 | 73.43% | 2.78% | 50.38% |
+| 2 | [AndSDev](../submissions/57461bcb63905b3a11d97be7) | 1,000,000 | 93.65% | 4.52% | 8.19% |
+| 3 | [Konstantin Akimov](../submissions/57484a0663905b3a11d97c62) | 260,000 | 93.20% | 8.28% | 5.32% |
+| 4 | [Balzac](../submissions/5748dc5763905b3a11d97d02) | 1,000,000 | 88.94% | 1.80% | 20.31% |
+| 5 | [Zavtramen](../submissions/5748c99463905b3a11d97cdb) | 1,000,000 | 86.48% | 1.95% | 25.09% |
+| 6 | [Aleksandr Plesovskikh](../submissions/57407f40a6200f18777121d1) | 420,000 | 86.39% | 3.00% | 24.23% |
+| 7 | [Anton Bulychev](../submissions/5748cffe63905b3a11d97ce5) | 1,000,000 | 83.84% | 6.03% | 26.28% |
+| 8 | [Ihor Brazhnichenko](../submissions/57488d9763905b3a11d97c80) | 360,000 | 81.82% | 1.21% | 35.17% |
+| 9 | [Vladimir Prihojenko](../submissions/5748d90363905b3a11d97cf5) | 300,000 | 73.28% | 2.37% | 51.08% |
 
 The following graph shows how the correctness rate of the solutions improves with the number of blocks processed. Note that the horizontal scale is logarithmic.
 
@@ -188,3 +190,13 @@ The following two graphs show how the false negative and false positive rates ch
 Interestingly, some of the solutions become worse after an initial period of improvement. The graph of false positives provides a likely explanation: because nonwords are generated randomly, they, too, can appear repeatedly (especially if they are short), albeit it happens much less freuqntly than with words. This leads to the accumulation of certain nonwords that the solution mistakes for words. Depending on the details of the learning algorithm, some solutions are more prone to this effect than others, and some seem to be completely immune to it.
 
 The raw results of the run on 1,000,000 blocks are available as a [JSON file](../res-learning/1m.json).
+
+### Special prizes
+
+We had declared that we would award two special prizes, and we decided to hand them to the authors of the best learning solutions. There wasn't an official criterion for what counts as “best”, so here is our rationale.
+
+One **400 USD** special prize goes to **rd.nvkz**, whose solution achieved the highest correctness rate we have seen, 93.99%. The learning potential of this solution is impressive: it kept improving long after the marginal correctness rates of most other solutions stabilized or even started to degrade.
+
+Another **400 USD** special prize goes to **Balzac** for the best combination of the learning and non-learning parts. The baseline (non-learning) result of 80.72% is the best of all learning solutions, and it would rank 14th in the main results if learning were forbidden for everybody. However, learning put this solution 6th in the main standings with 10,000 blocks. This solution is the quickest to learn: already at 20,000 blocks it overtakes the best non-learning solution, and keeps the leadership until 70,000 blocks.
+
+Congratulations to the winners of the special awards!

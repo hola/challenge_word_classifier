@@ -159,7 +159,7 @@ It takes way more than 10,000 blocks for most dictionary words to appear at leas
 
 When tested on such a large set, 4 of the 9 solutions ran out of memory and crashed. The table below summarizes each solution's final achievement; for those that crashed, the last achievement before the crash is shown. For performance reasons, our test system was configured to dump intermediate results only every 10,000 blocks, so the actual achievements by the crashing solutions are probably slightly better. The table below is ordered by the last achieved correctness rate.
 
-We discovered that Node.js behaves in a nondeterministic manner even on identical programs with identical inputs. This causes the same solution to crash at different times when the entire set of tests is run repeatedly. Below are the results of one such experiment; your results might be slightly different.
+We discovered that Node.js behaves in a nondeterministic manner even on identical programs with identical inputs. This causes the same solution to crash at different times when the entire set of tests is run repeatedly. Below are the results of one such experiment; your results might be slightly different. Note that we had to run the testing harness with the `--unsafe` option; without it, the Node.js VM seemed to cause out-of-memory crashes much earlier.
 
 | # | ID | Blocks | Correct | F- | F+ |
 |---|----|--------|---------|----|----|
@@ -197,6 +197,6 @@ We had declared that we would award two special prizes, and we decided to hand t
 
 One **400 USD** special prize goes to **rd.nvkz**, whose solution achieved the highest correctness rate we have seen, 93.99%. The learning potential of this solution is impressive: it kept improving long after the marginal correctness rates of most other solutions stabilized or even started to degrade.
 
-Another **400 USD** special prize goes to **Balzac** for the best combination of the learning and non-learning parts. The baseline (non-learning) result of 80.72% is the best of all learning solutions, and it would rank 14th in the main results if learning were forbidden for everybody. However, learning put this solution 6th in the main standings with 10,000 blocks. This solution is the quickest to learn: already at 20,000 blocks it overtakes the best non-learning solution, and keeps the leadership until 70,000 blocks.
+Another **400 USD** special prize goes to **AndSDev** for the second-highest correctness rate, 93.65%. At 1,000,000 blocks, these two leading solutions were almost indistinguishable, so we think they both deserve the special prizes. Although this solution doesn't continue improving at 1,000,000 blocks, it does not degrade, either, keeping its high correctness rate stable.
 
 Congratulations to the winners of the special awards!

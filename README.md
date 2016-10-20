@@ -18,7 +18,7 @@ To make repeated publications more manageable, the monolithic README has been co
 
 A comparison of learning solutions, and the handing of the special awards.
 
-*Published on October 19, 2016*
+*Published on October 19, 2016 ([Russian version](https://habrahabr.ru/company/hola/blog/313176/))*
 
 ## [Final standings](blog/05-final-standings.md)
 

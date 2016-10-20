@@ -4,6 +4,8 @@ We promised to publish an analysis of the solutions that learn from the inputs g
 
 This post also announces the winners of the special prizes.
 
+See also the [Russian version](https://habrahabr.ru/company/hola/blog/313176/) of this page.
+
 ## Learning solutions
 
 We found 9 submissions to exhibit self-learning behavior. That is, their correctness rate improves as they are being continuously tested.

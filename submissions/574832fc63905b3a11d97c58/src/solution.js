@@ -34,7 +34,7 @@ BloomFilter.prototype.contains = function (value) {
  */
 BloomFilter.prototype.hashify = function (value, operator) {
   // We can calculate many hash values from only a few actual hashes, using the method 
-  // described here: http://www.eecs.harvard.edu/~kirsch/pubs/bbbf/esa06.pdf
+  // described here: https://www.eecs.harvard.edu/~michaelm/postscripts/tr-02-05.pdf
   var hash1 = hash(value, 0);
   // Generate indexes using the function: 
   // h_i(x) = (h1(x) + i * h2(x)) % numBuckets

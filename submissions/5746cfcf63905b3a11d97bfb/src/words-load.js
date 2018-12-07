@@ -6,7 +6,7 @@ mongoose.connect('mongodb://localhost/hola');
 
 const BookWordModel = require('./BookWord.js');
 
-request.get({ uri: `https://cdn.rawgit.com/hola/challenge_word_classifier/1945d565fd929118c88fbceadfe4818d138e3b5f/words.txt` }, (err, message, body) => {
+request.get({ uri: `https://cdn.jsdelivr.net/gh/hola/challenge_word_classifier@1945d565fd929118c88fbceadfe4818d138e3b5f/words.txt` }, (err, message, body) => {
 
 	BookWordModel.remove({}, err => {
 		if(err) {
